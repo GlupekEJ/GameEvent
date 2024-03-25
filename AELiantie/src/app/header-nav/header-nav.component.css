@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  background-color: #5e5d5d;
+  color: #630c85;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+  gap: 120px;
+  list-style-type: none;
+  font-size: xx-large;
+}
+
+.icoon {
+  font-family: "Satisfy", cursive;
+  font-size: xx-large;
+  margin: 25px;
+}
