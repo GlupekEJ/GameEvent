@@ -1,7 +1,7 @@
 nav {
   display: flex;
-  background-color: #5e5d5d;
-  color: #630c85;
+  background-color: #8514f5;
+  color: #f7fff7;
   flex-wrap: wrap;
   flex-direction: row;
   position: sticky;
@@ -9,6 +9,7 @@ nav {
   z-index: 1000;
 }
 ul {
+  color: #f7fff7;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,6 +18,9 @@ ul {
   gap: 120px;
   list-style-type: none;
   font-size: xx-large;
+}
+a {
+  color: #f7fff7;
 }
 
 .icoon {
