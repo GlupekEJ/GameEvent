@@ -1,0 +1,35 @@
+#table1 {
+  height: 1em;
+  width: 1.3em;
+  background-color: rgb(114, 245, 201);
+  position: relative;
+  left: 6px;
+  top: 0px;
+}
+#table2 {
+  height: 1em;
+  width: 1.3em;
+  background-color: rgb(114, 245, 201);
+  position: relative;
+  left: 60px;
+  top: -6px;
+}
+#table3 {
+  height: 1em;
+  width: 1.3em;
+  background-color: rgb(114, 245, 201);
+  position: relative;
+  left: 80px;
+  top: 0px;
+}
+#table4 {
+  height: 1em;
+  width: 1.3em;
+  background-color: rgb(114, 245, 201);
+  position: relative;
+  left: 20px;
+  top: 0px;
+}
+.floorplanSection {
+  background-color: rgb(85, 84, 84);
+}
