@@ -23,13 +23,32 @@
   top: 0px;
 }
 #table4 {
-  height: 1em;
-  width: 1.3em;
+  height: 2em;
+  width: 1em;
   background-color: rgb(114, 245, 201);
   position: relative;
-  left: 20px;
-  top: 0px;
+  left: 342px;
+  top: 20px;
 }
+#table5 {
+  height: 2em;
+  width: 1em;
+  background-color: rgb(114, 245, 201);
+  position: relative;
+  left: 295px;
+  top: -10px;
+}
+#table6 {
+  height: 1em;
+  width: 2em;
+  background-color: rgb(114, 245, 201);
+  position: relative;
+  left: 310px;
+  top: -25px;
+}
+
 .floorplanSection {
   background-color: rgb(85, 84, 84);
+  height: 60vh;
+  width: 100vw;
 }
