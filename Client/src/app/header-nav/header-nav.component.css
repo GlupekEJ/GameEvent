@@ -14,17 +14,137 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 35px;
-  gap: 120px;
+  margin-top: 75px;
+  gap: 80px;
   list-style-type: none;
-  font-size: xx-large;
+  font-size: x-large;
 }
 a {
   color: #f7fff7;
+}
+.logo {
+  height: "200px";
+  width: "300px";
 }
 
 .icoon {
   font-family: "Satisfy", cursive;
   font-size: xx-large;
   margin: 25px;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  left: 60vw;
+  top: 50px;
+  height: 80px;
+  width: 80px;
+}
+.fa-solid,
+.fa-bars {
+  font-size: 5em;
+}
+
+@media only screen and (max-width: 1400px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    gap: 70px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    gap: 60px;
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    gap: 40px;
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    left: 50vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    left: 40vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    left: 30vw;
+  }
+}
+@media only screen and (max-width: 560px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    left: 20vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    left: 15vw;
+    top: 25px;
+    height: 40px;
+    width: 40px;
+  }
+  .fa-solid,
+  .fa-bars {
+    font-size: 3.5em;
+  }
+  .logo {
+    height: 100px;
+    width: 200px;
+  }
 }
