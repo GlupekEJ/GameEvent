@@ -21,7 +21,18 @@ ul {
 }
 a {
   color: #f7fff7;
+  text-decoration: none;
 }
+/*a:hover {
+  color: #7df9b8;
+}*/
+
+a:hover {
+  color: #081c3a;
+  background-color: #7df9b8;
+  border-radius: 15%;
+}
+
 .logo {
   height: 200px;
   width: 400px;
