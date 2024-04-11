@@ -123,7 +123,29 @@ a {
   }
   .burger {
     display: flex;
-    left: 20vw;
+    left: 15vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /*Tablets [601px -> 1200px]*/
+  ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    left: 15vw;
+    top: 25px;
+    height: 40px;
+    width: 40px;
+  }
+  .logo {
+    height: 100px;
+    width: 200px;
+  }
+  .fa-solid,
+  .fa-bars {
+    font-size: 3.5em;
   }
 }
 
