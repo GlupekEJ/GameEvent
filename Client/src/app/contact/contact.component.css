@@ -1,0 +1,132 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/*     BODY     */
+
+body {
+    background-color: #F8F8F8;
+    margin: auto;
+    max-width: 96rem;
+}
+
+/*     MAIN     */
+
+main {
+    margin: auto;
+    margin-top: 5rem;
+    max-width: 40rem;
+    background-color: #FBFBFB;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em;
+}
+
+
+/*     FORM REGISTREREN     */
+
+
+
+
+.kader_registreren{
+    margin-top: 4rem;
+background: rgb(125,249,184);
+background: linear-gradient(90deg, rgba(125,249,184,1) 0%, rgba(40,88,92,1) 0%, rgba(20,50,71,1) 100%);
+    border-radius: 10px;
+    border: #202323 1px solid;
+    margin-bottom: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+
+
+label {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+input {
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    border-radius: 10px;
+    border: #202323 1px solid;
+       box-shadow: 0px 15px 10px -15px #111;  
+   
+}
+
+.transactie, .email, .voornaam, .achternaam {
+    font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.probleem {
+    font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: none;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+      max-width: 100%;
+    border: #202323 1px solid;
+       box-shadow: 0px 15px 10px -15px #111;  
+}
+
+
+.verstuur_bericht {
+      text-align: center
+}
+
+
+.knop_verstuur_bericht {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+    background-color: #7DF9B8;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: #202323 1px solid;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    display: inline-block;
+  
+      font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #0E0E0E;
+    
+}
+
+.knop_verstuur_bericht:hover {
+    background-color: #32b772;
+}
