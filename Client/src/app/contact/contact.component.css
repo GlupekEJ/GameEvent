@@ -11,20 +11,17 @@
 
 body {
     background-color: #F8F8F8;
-    margin: auto;
-    max-width: 96rem;
 }
 
 /*     MAIN     */
 
 main {
     margin: auto;
-    margin-top: 5rem;
     max-width: 40rem;
-    background-color: #FBFBFB;
+    background-color: #F8F8F8;
 }
 
-h1 {
+section p {
     text-align: center;
     font-family: "Kanit", sans-serif;
     font-weight: 600;
@@ -32,21 +29,26 @@ h1 {
     font-size: 2.5em;
 }
 
+section {
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+
 
 /*     CONTACTFORMULIER     */
 
 
 .kader_registreren{
-    margin-top: 4rem;
     background: rgb(125,249,184);
     background: linear-gradient(90deg, rgba(125,249,184,1) 0%, rgba(40,88,92,1) 0%, rgba(20,50,71,1) 100%);
     border-radius: 10px;
     border: #202323 1px solid;
-    margin-bottom: 7rem;
     margin-left: 1rem;
     margin-right: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
+    margin-bottom: 5em;
+
 }
 
 
@@ -125,7 +127,8 @@ textarea {
     font-weight: 500;
     font-style: normal;
     color: #0E0E0E;
-}
+        
+    }
 
 .knop_verstuur_bericht:hover {
     background-color: #32b772;
