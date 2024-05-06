@@ -1,236 +1,201 @@
 /*     ALGEMENE ASTERISK     */
 
 * {
-    padding: 0px;
+  padding: 0px;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 main {
-    margin: auto;
-    max-width: 92rem;
-    
+  margin: auto;
 }
 
 body {
-    margin: auto;
-    max-width: 96rem;
+  margin: auto;
+  max-width: 96rem;
 }
 
 /*     HERO IMAGE / ABOVE FOLD + CALL TO ACTION    */
 
 .hero {
-    background-color: #715CE4;
-    border: #202323 3px solid;
-    border-radius: 10px;
-    display: flex;
-    padding-top: 100px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 100px;
-    max-width: 100%; 
-    text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 100%;
+  text-align: center;
+  background-image: url(../Image/3.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slogan {
-    color: #F8F8F8;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 600;
-    font-size: clamp(2.5rem, 5vw, 3rem);
-    letter-spacing: 3px;
-    margin-top: 2rem;
-    max-width: 100%;
-    margin-bottom: 1.5rem;
+  color: #f8f8f8;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  letter-spacing: 3px;
+  margin-top: 2rem;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
 }
 
-.subtitel1, .subtitel2 {
-    color: #F8F8F8;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    max-width: 100%;
+.subtitel1,
+.subtitel2 {
+  color: #f8f8f8;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  max-width: 100%;
 }
 
 .subtitel2 {
-      margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
-
 .knop {
-    background-color: #7DF9B8;
-    color: #0E0E0E;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 500;
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 15px 10px -15px #111;
-    margin-top: 4rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    transition: 0.2s;
-    
+  background-color: #7df9b8;
+  color: #0e0e0e;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 15px 10px -15px #111;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  transition: 0.2s;
 }
 
 a.knop:hover {
-    background-color: #32b772;
+  background-color: #32b772;
 }
 
 .naam_gast {
-    font-size: 1.7rem;
-    font-family: 'Kalam', sans-serif;
-color: #F8F8F8;
-    
+  font-size: 1.7rem;
+  font-family: "Kalam", sans-serif;
+  color: #f8f8f8;
 }
 
-
-
 .titel_activiteiten {
-   
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 2.5rem;
-    margin-top: 7rem;
-    margin-bottom: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    font-weight: 600;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-weight: 600;
 }
 
 .titel_gasten {
-
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 2.5rem;
-    margin-top: 7rem;
-    margin-bottom: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    font-weight: 600;
-    
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-weight: 600;
 }
 
-
 .activiteit {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;  
-    padding-top: 3rem;
-    background: rgb(8,28,58);
-    background: linear-gradient(180deg, rgba(8,28,58,1) 0%, rgba(22,77,160,1) 100%);
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 20%;
-    height: 200px; 
-    width: 200px; 
-    box-shadow: 0px 15px 10px -15px #111;
-    overflow: hidden; /* Hide overflow content */
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 3rem;
+  background: rgb(8, 28, 58);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 28, 58, 1) 0%,
+    rgba(22, 77, 160, 1) 100%
+  );
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 20%;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0px 15px 10px -15px #111;
+  overflow: hidden; /* Hide overflow content */
 }
 
 .gast {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;  
-    padding-top: 2rem;
-    background: rgb(8,28,58);
-    background: linear-gradient(180deg, rgba(8,28,58,1) 0%, rgba(22,77,160,1) 100%);
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 20%;
-    height: 200px; 
-    width: 200px; 
-    box-shadow: 0px 15px 10px -15px #111;
-    overflow: hidden; 
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 2rem;
+  background: rgb(8, 28, 58);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 28, 58, 1) 0%,
+    rgba(22, 77, 160, 1) 100%
+  );
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 20%;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0px 15px 10px -15px #111;
+  overflow: hidden;
 }
-
-
 
 .product_grid {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    flex-grow: 0;
-    justify-content: center;
-    
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  flex-grow: 0;
+  justify-content: center;
 }
-
-
 
 .titel_activiteit {
-
-font-family: 'Kalam', sans-serif;
-color: #F8F8F8;
-align-items: center;
-
+  font-family: "Kalam", sans-serif;
+  color: #f8f8f8;
+  align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*     MEDIA QUERIES     */
 
 @media screen and (max-width: 75rem) {
-
-
-    .hero {
-        border-radius: 0px;
-        border-left: none;
-        border-right: none;
-    }
-
+  .hero {
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+  }
 }
 
-
-
 @media screen and (max-width: 104.5rem) {
-
 }
 
 @media screen and (max-width: 34rem) {
-    .slogan {
-        display: none;
-    }
-    .subtitel {
-        text-align: center;
-    }
+  .slogan {
+    display: none;
+  }
+  .subtitel {
+    text-align: center;
+  }
 
-    .knop {
-        display: block;
-        width: 100%
-    }
-
- 
-
+  .knop {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 68rem) {
-
-    .hero {
-        border-radius: 0px;
-        border-left: none;
-        border-right: none;
-    }
+  .hero {
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+  }
 }
-
-
-
-
