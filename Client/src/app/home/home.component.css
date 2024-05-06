@@ -146,7 +146,7 @@ a.knop:hover {
   overflow: hidden;
 }
 
-.product_grid {
+.grid {
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -157,6 +157,10 @@ a.knop:hover {
   margin-right: 1rem;
   flex-grow: 0;
   justify-content: center;
+}
+
+.gasten {
+  margin-bottom: 10rem;
 }
 
 .titel_activiteit {
