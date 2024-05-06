@@ -179,9 +179,7 @@ a.knop:hover {
 }
 
 @media screen and (max-width: 34rem) {
-  .slogan {
-    display: none;
-  }
+    
   .subtitel {
     text-align: center;
   }
