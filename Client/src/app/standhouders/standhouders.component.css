@@ -1,0 +1,21 @@
+
+h1{
+    font-family: "Freeman", sans-serif;
+    padding: 300px;
+    text-align: center;
+    background-image:linear-gradient(to top, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)),url(../Image/senad-palic-bWYZn--b48I-unsplash.jpg) ;
+    background-size: cover;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #f8f8f8;
+    margin: 0;
+
+}
+h2{
+    font-size: 3em;
+    font-family: "Freeman", sans-serif;
+    color: #081C3A;
+    text-align: center;
+   
+
+}
