@@ -1,54 +1,98 @@
 #table1 {
-  height: 1em;
-  width: 1.3em;
-  background-color: rgb(114, 245, 201);
-  position: relative;
-  left: 6px;
-  top: 0px;
-}
-#table2 {
-  height: 1em;
-  width: 1.3em;
-  background-color: rgb(114, 245, 201);
-  position: relative;
-  left: 60px;
-  top: -6px;
-}
-#table3 {
-  height: 1em;
-  width: 1.3em;
-  background-color: rgb(114, 245, 201);
-  position: relative;
-  left: 80px;
-  top: 0px;
-}
-#table4 {
   height: 2em;
   width: 1em;
   background-color: rgb(114, 245, 201);
-  position: relative;
-  left: 342px;
-  top: 20px;
+  position: absolute;
+  left: 3.3em;
+  top: 15em;
+}
+#table1:active {
+  background-color: chartreuse;
+}
+#table2 {
+  height: 1em;
+  width: 2em;
+  background-color: rgb(114, 245, 201);
+
+  position: absolute;
+  left: 4.2em;
+  top: 16em;
+}
+#table3 {
+  height: 1em;
+  width: 2em;
+  background-color: rgb(114, 245, 201);
+
+  position: absolute;
+  left: 6.2em;
+  top: 16em;
+}
+#table1b {
+  height: 2em;
+  width: 1em;
+  background-color: rgb(114, 245, 201);
+  position: absolute;
+  left: 8.2em;
+  top: 15em;
+}
+
+#table4 {
+  height: 2em;
+  width: 1em;
+  background-color: rgb(197, 114, 245);
+  position: absolute;
+  left: 12em;
+  top: 15em;
 }
 #table5 {
   height: 2em;
   width: 1em;
-  background-color: rgb(114, 245, 201);
-  position: relative;
-  left: 295px;
-  top: -10px;
+  background-color: rgb(51, 3, 83);
+  position: absolute;
+  left: 15em;
+  top: 15em;
 }
 #table6 {
   height: 1em;
   width: 2em;
   background-color: rgb(114, 245, 201);
-  position: relative;
-  left: 310px;
-  top: -25px;
+  position: absolute;
+  left: 13em;
+  top: 16em;
+}
+#table7 {
+  height: 1em;
+  width: 2em;
+  background-color: rgb(75, 19, 42);
+  position: absolute;
+  left: 20em;
+  top: 16em;
+}
+#table8 {
+  height: 2em;
+  width: 1em;
+  background-color: rgb(75, 19, 42);
+  position: absolute;
+  left: 19em;
+  top: 15em;
+}
+.table:active {
+  background-color: chartreuse;
 }
 
 .floorplanSection {
   background-color: rgb(85, 84, 84);
-  height: 60vh;
+  height: 80vh;
   width: 100vw;
+}
+
+.entrance {
+  height: 5.6em;
+  width: 2em;
+  position: relative;
+  background-color: black;
+  top: 180px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: antiquewhite;
 }
