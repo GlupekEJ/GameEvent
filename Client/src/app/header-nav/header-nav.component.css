@@ -19,6 +19,7 @@ ul {
   gap: 80px;
   list-style-type: none;
   font-size: x-large;
+  font-family: "Inter", sans-serif;
 }
 a {
   color: #f7fff7;
