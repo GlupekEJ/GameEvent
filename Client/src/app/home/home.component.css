@@ -1,8 +1,8 @@
+
 /*     ALGEMENE ASTERISK     */
 
 * {
   padding: 0px;
-
   box-sizing: border-box;
 }
 
@@ -10,10 +10,6 @@ main {
   margin: auto;
 }
 
-body {
-  margin: auto;
-  max-width: 96rem;
-}
 
 /*     HERO IMAGE / ABOVE FOLD + CALL TO ACTION    */
 
@@ -171,17 +167,6 @@ a.knop:hover {
 
 /*     MEDIA QUERIES     */
 
-@media screen and (max-width: 75rem) {
-  .hero {
-    border-radius: 0px;
-    border-left: none;
-    border-right: none;
-  }
-}
-
-@media screen and (max-width: 104.5rem) {
-}
-
 @media screen and (max-width: 34rem) {
     
   .subtitel {
@@ -194,10 +179,3 @@ a.knop:hover {
   }
 }
 
-@media screen and (max-width: 68rem) {
-  .hero {
-    border-radius: 0px;
-    border-left: none;
-    border-right: none;
-  }
-}

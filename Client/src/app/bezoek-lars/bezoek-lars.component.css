@@ -2,7 +2,6 @@
 
 * {
     padding: 0px;
-
     box-sizing: border-box;
 }
 
@@ -10,7 +9,6 @@
 main {
     margin: auto;
     max-width: 80rem;
-    
 }
 
 
@@ -24,12 +22,10 @@ main {
 .titel_planning {
      font-family: 'Kalam', sans-serif;
      font-size: 2.5em;
-     
 }
 
 .juli1, .juli2, .datum {
       font-family: "Inter", sans-serif;
-
 }
 .juli2 {
     margin-top: 5rem;
@@ -38,8 +34,6 @@ main {
 .datum {
     font-size: 1.8rem;
 }
-
-
 
 li {
     font-size: 1.2rem;
