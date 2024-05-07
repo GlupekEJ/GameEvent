@@ -16,13 +16,15 @@ main {
 
 .intro {
        font-family: 'Kanit', sans-serif;
-       font-size: 2rem;
+       font-size: 2.5em;
+       font-weight: 600;
        text-align: center;
 }
 
 .titel_planning {
      font-family: 'Kalam', sans-serif;
-     font-size: 2.5rem;
+     font-size: 2.5em;
+     
 }
 
 .juli1, .juli2, .datum {
