@@ -8,6 +8,7 @@ h1{
     font-size: 3em;
     color: #f8f8f8;
     margin: 0;
+    background-image:linear-gradient(to top , rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)) ,  url(../Image/senad-palic-bWYZn--b48I-unsplash.jpg);
 
 }
 h2{
@@ -17,4 +18,43 @@ h2{
     text-align: center;
    
 
+}
+.partners{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+   margin:10px ;
+   
+}
+.patner1 img{
+height: 300px;
+width: 300px;
+margin: 10px;
+}
+.patner2 img{
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+}
+.patner3 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.patner4 img 
+{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+.patner5 img {
+    height: 290px;
+    width: 290px;
+    margin: 10px;
+}
+.patner6 img {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
 }
