@@ -84,7 +84,7 @@ section{
     justify-content: center;
     align-items: center;
     color: azure;
-    height: 400px;
+  
     width:500px ;
     background: rgb(8,28,58);
     background: linear-gradient(180deg, rgba(8,28,58,1) 0%, rgba(22,77,160,1) 100%);
@@ -116,7 +116,7 @@ button{
     justify-content: center;
     align-items: center;
     color: azure;
-    height: 400px;
+  
     width:500px ;
     background: rgb(8,28,58);
     background: linear-gradient(180deg, rgba(8,28,58,1) 0%, rgba(22,77,160,1) 100%);
@@ -144,7 +144,7 @@ button{
     justify-content: center;
     align-items: center;
     color: azure;
-    height: 400px;
+
     width:500px ;
     background: rgb(8,28,58);
     background: linear-gradient(180deg, rgba(8,28,58,1) 0%, rgba(22,77,160,1) 100%);
@@ -161,3 +161,18 @@ button{
 .ticket3 h2{
     font-size: 3em;
 }
+.counter {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  
+  #quantity {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
