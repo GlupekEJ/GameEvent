@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  background-color: #081c3a;
+  background-color: #061e3a;
   color: #f7fff7;
   flex-wrap: wrap;
   flex-direction: row;
@@ -53,15 +53,26 @@ a:hover {
 .fa-bars {
   font-size: 5em;
 }
-@media only screen and (max-width: 1507px) {
+.fa-cart-shopping {
+  font-size: medium;
+
+  padding: 5px;
+  border: solid #f7fff7 2px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1590px) {
   .navLinks ul {
-    gap: 30px;
+    gap: 50px;
   }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1420px) {
   .navLinks ul {
     gap: 40px;
+  }
+  .logo {
+    height: 160px;
+    width: 320px;
   }
 }
 
@@ -96,6 +107,7 @@ a:hover {
     list-style-type: none;
     font-size: x-large;
     font-family: "Inter", sans-serif;
+    padding: 10px;
   }
   li:nth-child(even) {
     border: solid #133b75 1px;
@@ -106,8 +118,8 @@ a:hover {
 
   .hamburgerNavLinks ul {
     color: #f7fff7;
-    background-color: #081c3a;
-    position: fixed;
+    background-color: #061e3a;
+    position: absolute;
     top: 80px;
     right: 0px;
     display: block;
@@ -118,6 +130,9 @@ a:hover {
     gap: 80px;
     list-style-type: none;
     font-size: x-large;
+  }
+  li {
+    margin-bottom: 8px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -145,6 +160,9 @@ a:hover {
     display: flex;
     left: 80vw;
   }
+  .hamburgerNavLinks ul {
+    right: 2px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -162,6 +180,13 @@ a:hover {
   .fa-solid,
   .fa-bars {
     font-size: 3.5em;
+  }
+  .hamburgerNavLinks ul {
+    top: 20px;
+    right: 2px;
+  }
+  .fa-cart-shopping {
+    font-size: 1em;
   }
 }
 .burgerNav {
@@ -183,5 +208,8 @@ a:hover {
   .logo {
     height: 100px;
     width: 200px;
+  }
+  .fa-cart-shopping {
+    font-size: 1em;
   }
 }

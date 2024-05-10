@@ -1,4 +1,10 @@
 footer {
   background-color: #081c3a;
   color: #f7fff7;
+  margin-bottom: -15px;
+  padding-bottom: 0;
+}
+
+.footerP {
+  text-align: center;
 }
