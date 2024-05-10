@@ -1,191 +1,197 @@
 body {
-    margin: 0;
-    padding: 0;
-    color: #F8F8F8;
+  margin: 0;
+  padding: 0;
+  color: #f8f8f8;
 }
 
 h1 {
-    padding: 25px;
-    text-align: center;
-    font-size: 4em;
+  padding: 25px;
+  text-align: center;
+  font-size: 4em;
 }
-section{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .dag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: azure;
-    height: 200px;
-    width:500px ;
-    background-image:linear-gradient(to top , rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)) , url(../Image/andrew-varnum-MzC42_webGo-unsplash.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  height: 200px;
+  width: 500px;
+  background-image: linear-gradient(to top, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)),
+    url(../Image/andrew-varnum-MzC42_webGo-unsplash.jpg);
 
-    background-size: cover;
-    padding: 25px;
-    margin-bottom: 10%;
-    border-radius: 50px;
- 
-   
+  background-size: cover;
+  padding: 25px;
+  margin-bottom: 10%;
+  border-radius: 50px;
 }
-.dag h1{
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
+.dag h1 {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
 }
-.week{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: azure;
-    height: 200px;
-    width:500px ;
-    background-image:linear-gradient(to top , rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)) , url(../Image/ben-neale-zpxKdH_xNSI-unsplash.jpg) ;
-    background-size: cover;
-    padding: 25px;
-    margin-bottom: 10%;
-    border-radius: 50px;
+.week {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  height: 200px;
+  width: 500px;
+  background-image: linear-gradient(to top, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)),
+    url(../Image/ben-neale-zpxKdH_xNSI-unsplash.jpg);
+  background-size: cover;
+  padding: 25px;
+  margin-bottom: 10%;
+  border-radius: 50px;
 }
-.week h1{
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
-}
-
-.vip{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: azure;
-    height: 200px;
-    width:500px ;
-    background-image:linear-gradient(to top , rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)) , url(../Image/pablo-arenas-7T6eguGtb8w-unsplash.jpg); 
-    background-size: cover;
-    padding: 25px;
-    margin-bottom: 10%;
-    border-radius: 50px;
-}
-.vip h1{
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
+.week h1 {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
-.ticket1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: azure;
-  
-    width:500px ;
-    background: rgb(8,28,58);
-    background: linear-gradient(180deg, rgba(8,28,58,1) 0%, rgba(22,77,160,1) 100%);
- 
-    padding: 25px;
-    margin-bottom: 10%;
-    border-radius: 60px 70px 40px 140px;
-
+.vip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  height: 200px;
+  width: 500px;
+  background-image: linear-gradient(to top, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)),
+    url(../Image/pablo-arenas-7T6eguGtb8w-unsplash.jpg);
+  background-size: cover;
+  padding: 25px;
+  margin-bottom: 10%;
+  border-radius: 50px;
 }
-.ticket1 h1{
-    font-family: "Kanit", sans-serif;
-    text-transform: uppercase;
-
-}
-.ticket1 h2{
-    font-size: 3em;
+.vip h1 {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
-button{
-    background-color: #7df9b8;
-    color: #0e0e0e;
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 15px 10px -15px #111;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    transition: 0.2s;
+.ticket1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+
+  width: 500px;
+  background: rgb(8, 28, 58);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 28, 58, 1) 0%,
+    rgba(22, 77, 160, 1) 100%
+  );
+
+  padding: 25px;
+  margin-bottom: 10%;
+  border-radius: 60px 70px 40px 140px;
+}
+.ticket1 h1 {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+}
+.ticket1 h2 {
+  font-size: 3em;
+}
+
+button {
+  background-color: #7df9b8;
+  color: #0e0e0e;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 15px 10px -15px #111;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  transition: 0.2s;
 }
 button:hover {
-    background-color: #32b772;
-  }
-  
-.ticket2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: azure;
-  
-    width:500px ;
-    background: rgb(8,28,58);
-    background: linear-gradient(180deg, rgba(8,28,58,1) 0%, rgba(22,77,160,1) 100%);
- 
-    padding: 25px;
-    margin-bottom: 10%;
-    border-radius: 60px 70px 40px 140px;
-
-    
-}
-.ticket2 h1{
-    font-family: "Kanit", sans-serif;
-    text-transform: uppercase;
-    padding: 0;
-}
-.ticket2 h2{
-    font-size: 3em;
-    padding: 0;
-    margin-bottom: 25px;
+  background-color: #32b772;
 }
 
-.ticket3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: azure;
+.ticket2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: azure;
 
-    width:500px ;
-    background: rgb(8,28,58);
-    background: linear-gradient(180deg, rgba(8,28,58,1) 0%, rgba(22,77,160,1) 100%);
- 
-    padding: 25px;
-    margin-bottom: 10%;
-    border-radius: 60px 70px 40px 140px;
+  width: 500px;
+  background: rgb(8, 28, 58);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 28, 58, 1) 0%,
+    rgba(22, 77, 160, 1) 100%
+  );
 
+  padding: 25px;
+  margin-bottom: 10%;
+  border-radius: 60px 70px 40px 140px;
 }
-.ticket3 h1{
-    font-family: "Kanit", sans-serif;
-    text-transform: uppercase;
+.ticket2 h1 {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  padding: 0;
 }
-.ticket3 h2{
-    font-size: 3em;
+.ticket2 h2 {
+  font-size: 3em;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.ticket3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+
+  width: 500px;
+  background: rgb(8, 28, 58);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 28, 58, 1) 0%,
+    rgba(22, 77, 160, 1) 100%
+  );
+
+  padding: 25px;
+  margin-bottom: 10%;
+  border-radius: 60px 70px 40px 140px;
+}
+.ticket3 h1 {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+}
+.ticket3 h2 {
+  font-size: 3em;
 }
 .counter {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .buttons button {
-    padding: 10px 20px;
-    font-size: 20px;
-  }
-  
-  #quantity {
-    margin: 0 10px;
-    font-size: 20px;
-  }
-  
+  text-align: center;
+  margin-top: 50px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+#quantity {
+  margin: 0 10px;
+  font-size: 20px;
+}
