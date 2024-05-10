@@ -29,7 +29,7 @@ main {
   color: #f8f8f8;
   font-family: "Kanit", sans-serif;
   font-weight: 600;
-  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-size: clamp(2.2em, 5vw, 3em);
   letter-spacing: 3px;
   margin-top: 2rem;
   max-width: 100%;
@@ -41,7 +41,7 @@ main {
   color: #f8f8f8;
   font-family: "Kanit", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+   font-size: clamp(1.5em, 5vw, 2em);
   letter-spacing: 1px;
   max-width: 100%;
 }
@@ -174,8 +174,8 @@ a.knop:hover {
   }
 
   .knop {
-    display: block;
-    width: 100%;
+    display: inline;
+    
   }
 }
 
