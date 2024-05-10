@@ -5,11 +5,10 @@
     text-align: center;
     background-size: cover;
     text-transform: uppercase;
-    font-size: 3em;
     color: #f8f8f8;
     margin: 0;
     background-image:linear-gradient(to top , rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)) ,  url(../Image/senad-palic-bWYZn--b48I-unsplash.jpg);
-
+    font-size:clamp(3em,7vh,5em); 
 }
 h2{
     font-size: 3em;
@@ -24,6 +23,7 @@ h2{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
    margin:10px ;
+   align-items: center;
    
 }
 .patner1 img{
@@ -60,7 +60,7 @@ margin: 10px;
 }
 
 h3{
-    font-size: 3em;
+    font-size:clamp(3em,7vh,5em); 
     font-family: "Freeman", sans-serif;
     color: #081C3A;
     text-align: center;
@@ -86,6 +86,9 @@ h3{
     font-family: "Kanit", sans-serif;
     text-transform: uppercase;
     padding: 0;
+}
+.regular h2{
+    color: white;
 }
 .content{
     display: flex;
@@ -116,10 +119,46 @@ h3{
     text-transform: uppercase;
     padding: 0;
 }
+.premiun h2{
+    color: white;
+}
 button{
-    padding: 20px;
-    color:#081C3A ;
-    background-color:#7DF9B8;
-    border-radius: 30px;
-    border: none;
+    background-color: #7df9b8;
+    color: #0e0e0e;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 15px 10px -15px #111;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: 0.2s;
+}
+button:hover{
+    background-color:  #32b772;
+}
+
+@media(max-width: 600px){
+    .partners{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 1.5em;
+        padding: 100px;
+    }
+
+    .premiun{
+        width: 300px;
+    }
+    .regular{
+        width: 300px;
+    }
 }
