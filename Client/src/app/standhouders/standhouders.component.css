@@ -98,33 +98,7 @@ h3 {
   align-items: center;
 }
 
-.premiun {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: azure;
-  height: 400px;
-  width: 500px;
-  background: rgb(8, 28, 58);
-  background: linear-gradient(
-    180deg,
-    rgba(8, 28, 58, 1) 0%,
-    rgba(22, 77, 160, 1) 100%
-  );
 
-  padding: 25px;
-  margin-bottom: 10%;
-  border-radius: 60px 70px 40px 140px;
-}
-.premiun h1 {
-  font-family: "Kanit", sans-serif;
-  text-transform: uppercase;
-  padding: 0;
-}
-.premiun h2 {
-  color: white;
-}
 .knop {
   background-color: #7df9b8;
   color: #0e0e0e;
