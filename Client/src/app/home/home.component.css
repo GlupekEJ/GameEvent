@@ -1,4 +1,3 @@
-
 /*     ALGEMENE ASTERISK     */
 
 * {
@@ -9,7 +8,6 @@
 main {
   margin: auto;
 }
-
 
 /*     HERO IMAGE / ABOVE FOLD + CALL TO ACTION    */
 
@@ -41,7 +39,7 @@ main {
   color: #f8f8f8;
   font-family: "Kanit", sans-serif;
   font-weight: 600;
-   font-size: clamp(1.5em, 5vw, 2em);
+  font-size: clamp(1.5em, 5vw, 2em);
   letter-spacing: 1px;
   max-width: 100%;
 }
@@ -73,7 +71,7 @@ a.knop:hover {
 }
 
 .naam_gast {
-  font-size: 1.7em;
+  font-size: 1em;
   font-family: "Kalam", sans-serif;
   color: #f8f8f8;
 }
@@ -164,18 +162,18 @@ a.knop:hover {
   color: #f8f8f8;
   align-items: center;
 }
+.knopje {
+  text-decoration: none;
+}
 
 /*     MEDIA QUERIES     */
 
 @media screen and (max-width: 34rem) {
-    
   .subtitel {
     text-align: center;
   }
 
   .knop {
     display: inline;
-    
   }
 }
-

@@ -4,8 +4,24 @@
     <div class="entrance">Inkom</div>
     <div class="grid-container">
       <div class="row">
-        <div id="table1"></div>
-        <div class="table" id="table2"></div>
+        <div id="table1">
+          <div
+            class="table"
+            [class.selectedTable]="testje"
+            (click)="setToActive()"
+          >
+            1
+          </div>
+        </div>
+        <div id="table2">
+          <div
+            class="table"
+            [class.selectedTable]="testje"
+            (click)="setToActive()"
+          >
+            2
+          </div>
+        </div>
         <div class="table" id="table3"></div>
         <div class="table" id="table1b"></div>
         <div class="table" id="table4"></div>
