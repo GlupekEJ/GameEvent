@@ -1,7 +1,7 @@
 #table1 {
   height: 2em;
   width: 1em;
-  background-color: rgb(114, 245, 201);
+
   position: absolute;
   left: 3.3em;
   top: 15em;
@@ -12,7 +12,6 @@
 #table2 {
   height: 1em;
   width: 2em;
-  background-color: rgb(114, 245, 201);
 
   position: absolute;
   left: 4.2em;
@@ -84,6 +83,12 @@
   background-color: rgb(85, 84, 84);
   height: 80vh;
   width: 100vw;
+}
+.table {
+  background-color: blue;
+}
+.selectedTable {
+  background-color: crimson;
 }
 
 .entrance {
