@@ -5,6 +5,7 @@ body {
 }
 
 h1 {
+  font-family: "Kanit", sans-serif;
   padding: 50px;
   text-align: center;
   font-size: clamp(3rem, 5vw, 5rem);
@@ -119,7 +120,7 @@ align-items: center;
   background-image:linear-gradient(to top , rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.5)) , url(../Image/pablo-arenas-7T6eguGtb8w-unsplash.jpg); 
   background-size: cover;
   padding: 35px;
-  margin-top: 25px;
+  margin-top: 11vw;
   border-radius: 50px;
 }
 .vip p {
@@ -268,7 +269,7 @@ button:hover {
       font-size: larger;
   }
   .dag p {
-      font-size:0.5em;
+      font-size:1em;
   }
   .dag h1{
     font-size: 2em;
@@ -279,7 +280,7 @@ button:hover {
       margin-top: 10px;
   }
   .week p {
-      font-size:0.4em;
+      font-size:0.9em;
   }
   .week h1{
     font-size: 2em;
@@ -289,7 +290,7 @@ button:hover {
       font-size: larger;
   }
   .vip p {
-      font-size:0.5em;
+      font-size:1em;
   }
   .vip h1{
     font-size: 2em;
@@ -343,7 +344,7 @@ button:hover {
       font-size: larger;
   }
   .dag p {
-      font-size:0.5em;
+      font-size:0.8em;
   }
   .dag h1{
     font-size: 1.5em;
@@ -354,7 +355,7 @@ button:hover {
       margin-top: 10px;
   }
   .week p {
-      font-size:0.4em;
+      font-size:0.8em;
   }
   .week h1{
     font-size: 1.5em;
@@ -364,7 +365,7 @@ button:hover {
       font-size: larger;
   }
   .vip p {
-      font-size:0.5em;
+      font-size:0.8em;
   }
   .vip h1{
     font-size: 1.5em;
