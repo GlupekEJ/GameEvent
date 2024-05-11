@@ -17,8 +17,8 @@ main {
        font-size: clamp(1.2em, 2.5vw, 2.5em); 
        font-weight: 600;
        text-align: center;
-       padding-left: 1rem;
-       padding-right: 1rem;
+       margin-left: 1rem;
+       margin-right: 1rem;
        margin-top: 5rem;
 }
 
@@ -40,9 +40,10 @@ main {
 
 li {
     font-size: clamp(1em, 2.5vw, 1.2em); 
+    margin-left: 1rem;
+    margin-right: 1rem;
     
 }
-
 
 .planning {
    
