@@ -11,48 +11,35 @@
   font-size: clamp(3em, 7vh, 5em);
 }
 h2 {
-  font-size: 3em;
+  font-size: clamp(3em, 7vh, 5em);
   font-family: "Freeman", sans-serif;
   color: #081c3a;
   text-align: center;
 }
+section {
+  align-items: center;
+}
 .partners {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  margin: 10px;
   align-items: center;
+  gap: 25px;
 }
-.patner1 img {
+.partners img {
+  margin: auto; /* Centra verticalmente la imagen */
+}
+
+
+.partners .patner1 {
   height: 300px;
   width: 300px;
-  margin: 10px;
+  
+
 }
-.patner2 img {
+
+.patner2{
   height: 300px;
-  width: 400px;
-  margin: 10px;
-}
-.patner3 img {
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-  margin: 10px;
-}
-.patner4 img {
-  height: 300px;
-  width: 300px;
-  margin: 10px;
-}
-.patner5 img {
-  height: 290px;
-  width: 290px;
-  margin: 10px;
-}
-.patner6 img {
-  height: 300px;
-  width: 300px;
-  margin: 10px;
+  width: 450px;
 }
 
 h3 {
@@ -121,12 +108,48 @@ a.knop:hover {
   background-color: #32b772;
 }
 
+@media only screen and (max-width: 1150px) {
+  .partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .patners .patner1  {
+    height: 200px;
+    width: 100px;
+    margin: 10px;
+  }
+  .patner2 img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+  }
+  .title {
+    font-size: 1.5em;
+    padding: 200px;
+  }
+
+
+}
 @media (max-width: 600px) {
   .partners {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+  }
+  .patners .patner1  {
+    height: 200px;
+    width: 100px;
+    margin: 10px;
+  }
+  .patner2 img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
   }
 
   .title {
@@ -134,10 +157,13 @@ a.knop:hover {
     padding: 100px;
   }
 
-  .premiun {
-    width: 300px;
-  }
   .regular {
-    width: 300px;
+    width: 200px;
+  }
+  h3{
+    font-size: clamp(1em, 5vh, 5em);
+  }
+  h2{
+    font-size: clamp(1em, 5vh, 5em);
   }
 }
