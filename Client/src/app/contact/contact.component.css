@@ -48,7 +48,7 @@ section {
 }
 
 label {
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: clamp(1em, 2vw, 1.1em);
   margin-bottom: 0.5rem;
   color: #ffffff;
 }
@@ -112,7 +112,7 @@ textarea {
   border-radius: 10px;
   transition: 0.2s;
   border: #202323 1px solid;
-  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  font-size: clamp(0.8em, 2vw, 1.1em);
   display: inline-block;
   font-family: "Kanit", sans-serif;
   font-weight: 500;

@@ -55,7 +55,7 @@ main {
   color: #0e0e0e;
   font-family: "Kanit", sans-serif;
   font-weight: 500;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1em, 2vw, 1.2em);
   text-decoration: none;
   text-align: center;
   border-radius: 10px;
@@ -73,7 +73,7 @@ a.knop:hover {
 }
 
 .naam_gast {
-  font-size: 1.7rem;
+  font-size: 1.7em;
   font-family: "Kalam", sans-serif;
   color: #f8f8f8;
 }
@@ -81,7 +81,7 @@ a.knop:hover {
 .titel_activiteiten {
   text-align: center;
   font-family: "Kanit", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   margin-top: 7rem;
   margin-bottom: 2rem;
   margin-left: 4rem;
@@ -101,7 +101,7 @@ a.knop:hover {
 }
 
 .activiteit {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 700;
   text-align: center;
   padding-top: 3rem;
@@ -122,7 +122,7 @@ a.knop:hover {
 }
 
 .gast {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 700;
   text-align: center;
   padding-top: 2rem;
