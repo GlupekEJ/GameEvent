@@ -266,6 +266,7 @@ button:hover {
   .dag{
       width: 400px;
       font-size: larger;
+      margin-top: 50px;
   }
   .dag p {
       font-size:1em;
@@ -276,7 +277,7 @@ button:hover {
   .week{
       width: 400px;
       font-size: larger;
-      margin-top: 10px;
+      margin-top: 80px;
   }
   .week p {
       font-size:0.9em;
@@ -287,6 +288,7 @@ button:hover {
   .vip{
       width: 400px;
       font-size: larger;
+      margin-top: 80px;
   }
   .vip p {
       font-size:1em;
@@ -332,6 +334,7 @@ button:hover {
 @media only screen and (max-width: 750px) {
   h1{
     padding: 15px;
+    font-size: 2em;
   }
   section{
       display: flex;
@@ -351,17 +354,21 @@ button:hover {
   .week{
       width: 250px;
       font-size: larger;
-      margin-top: 10px;
+      margin-top: 71px;
   }
   .week p {
       font-size:0.8em;
+
   }
   .week h1{
     font-size: 1.5em;
+    padding: 0;
+    margin-bottom: 18px;
   }
   .vip{
       width: 250px;
       font-size: larger;
+      margin-top: 71px;
   }
   .vip p {
       font-size:0.8em;
