@@ -1,13 +1,7 @@
 .floorplanSection {
   background-color: rgb(85, 84, 84);
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
-}
-.table {
-  background-color: blue;
-}
-.selectedTable {
-  background-color: crimson;
 }
 
 .entrance {
@@ -34,6 +28,16 @@
 .space {
   width: 100vw;
   height: 60px;
+}
+.spaceStands {
+  width: 100vw;
+  height: 30px;
+}
+.floorTitle {
+  font-size: clamp(2.2em, 5vw, 3em);
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 900px) {
