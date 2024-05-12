@@ -1,6 +1,6 @@
 .title {
   font-family: "Freeman", sans-serif;
-  padding: 300px;
+  padding: 200px;
   text-align: center;
   background-size: cover;
   text-transform: uppercase;
@@ -135,22 +135,20 @@ a.knop:hover {
 }
 @media (max-width: 800px) {
   .partners {
-    display: flex;
-    flex-direction: column;
+   display: grid;
+   grid-row: 1fr 1fr;
     justify-content: center;
     align-items: center;
 
   }
-  .patners .patner1  {
-    height: 200px;
+  .partners .patner1 {
+    height: 100px;
     width: 100px;
-    margin: 10px;
-  }
-  .patner2 img {
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-  }
+    }
+    .patner2{
+      height: 120px;
+      width: 205px;
+    }
 
   .title {
     font-size: clamp(1em, 5vh, 5em);
