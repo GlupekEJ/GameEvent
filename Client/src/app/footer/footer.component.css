@@ -4,6 +4,18 @@ footer {
   margin-bottom: -15px;
   padding-bottom: 0;
 }
+ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-left: 15vw;
+
+  gap: 20vw;
+  font-size: larger;
+}
 
 .footerP {
   text-align: center;
