@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './floorplan.component.css',
 })
 export class FloorplanComponent {
-  testje: boolean = true;
+  /* testje: boolean = true;
   setToActive() {
     this.testje = !this.testje;
     console.log('pressed');
-  }
+  }*/
 }
