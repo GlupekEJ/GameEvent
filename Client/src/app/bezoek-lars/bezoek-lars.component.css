@@ -24,7 +24,7 @@ main {
 
 .titel_planning {
      font-family: 'Kalam', sans-serif;
-     font-size: clamp(1.8em, 2.5vw, 2.5em); 
+     font-size: clamp(1.5em, 2.5vw, 2.5em);
 }
 
 .juli1, .juli2, .datum {
