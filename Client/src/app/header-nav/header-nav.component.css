@@ -15,7 +15,7 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 45px;
   gap: 70px;
   list-style-type: none;
   font-size: x-large;
@@ -97,7 +97,7 @@ a:hover {
     color: #f7fff7;
     background-color: #081c3a;
     position: fixed;
-    top: 80px;
+    top: 10px;
     right: -500px;
     display: block;
     flex-direction: row;
@@ -121,7 +121,7 @@ a:hover {
     color: #f7fff7;
     background-color: #061e3a;
     position: absolute;
-    top: 80px;
+    top: 10px;
     right: 0px;
     display: block;
     flex-direction: row;
@@ -183,7 +183,7 @@ a:hover {
     font-size: 3em;
   }
   .hamburgerNavLinks ul {
-    top: 20px;
+    top: -15px;
     right: 2px;
   }
   .fa-cart-shopping {
