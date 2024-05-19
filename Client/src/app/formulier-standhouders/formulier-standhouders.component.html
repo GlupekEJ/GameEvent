@@ -73,6 +73,20 @@
       <input type="radio" id="javascript" name="soortHandel" value="Merch" />  
       <label for="javascript">Merch</label>
     </div>
+    <label id="example-radio-group-label"
+      >Select the categorie you will be selling</label
+    >
+    <mat-radio-group
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group"
+    >
+      @for (categorie of categories; track categorie) {
+      <mat-radio-button class="example-radio-button" [value]="categorie">{{
+        categorie
+      }}</mat-radio-button>
+      }
+    </mat-radio-group>
+    <div>you sell: {{ categorySelection }}</div>
 
     <div class="verstuur_bericht">
       <button class="knop_verstuur_bericht">
