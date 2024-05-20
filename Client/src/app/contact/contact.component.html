@@ -1,45 +1,95 @@
-    <main>
+<main>
+  <section>
+    <p>Problemen met uw bestelling?</p>
+    <p>Laat het ons weten! 👇</p>
+  </section>
+  <form class="contactformulier">
+    <div class="transactie">
+      <label for="transactie" class="transactie_label">Transactie ID</label>
+      <input
+        type="text"
+        name="transactie"
+        id="transactie"
+        class="transactie_input"
+        required
+      />
+    </div>
+
+    <div class="email">
+      <label for="email" class="email_label">E-mailadres</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="email_input"
+        required
+      />
+    </div>
+
+    <div class="voornaam">
+      <label for="voornaam" class="voornaam_label">Voornaam</label>
+      <input
+        type="voornaam"
+        name="voornaam"
+        id="voornaam"
+        class="voornaam_input"
+        required
+      />
+    </div>
+
+    <div class="achternaam">
+      <label for="achternaam" class="achternaam_label">Achternaam</label>
+      <input
+        type="achternaam"
+        name="achternaam"
+        id="voornaam"
+        class="achternaam_input"
+        required
+      />
+    </div>
+
+    <div class="probleem">
+      <label for="probleem">Beschrijving van uw probleem</label>
+      <textarea
+        class="probleem_invul"
+        name="probleem"
+        id="probleem"
+        rows="10"
+        required
+      ></textarea>
+    </div>
+
+    <div class="verstuur_bericht">
+      <button class="knop_verstuur_bericht">VERSTUUR</button>
+    </div>
+  </form>
+
+  <!-- TEST TEMPLATE DRIVEN FORM -->
+
+  <form class="contactformulier">
+    <mat-form-field class="example-full-width">
+      <mat-label>Transactie ID</mat-label>
+      <input matInput placeholder="" value="" />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Voornaam</mat-label>
+      <input matInput placeholder="" value="" />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Achternaam</mat-label>
+      <input matInput placeholder="" value="" />
+    </mat-form-field>
+
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>Beschrijving van uw probleem</mat-label>
+      <textarea matInput placeholder="Bijv. Tickets niet ontvangen."></textarea>
+    </mat-form-field>
+
+    <button mat-flat-button color="primary">VERSTUUR</button>
+  </form>
+
   
-       <section>
-        <p>Problemen met uw bestelling?</p>
-        <p>Laat het ons weten! 👇</p>
-       </section>
-        <form class="contactformulier">
-
-            <div class="transactie">
-                <label for="transactie" class="transactie_label">Transactie ID</label>
-                <input type="text" name="transactie" id="transactie" class="transactie_input" required>
-
-            </div>
-
-            <div class="email">
-                <label for="email" class="email_label">E-mailadres</label>
-                <input type="email" name="email" id="email" class="email_input" required>
-
-            </div>
-
-            <div class="voornaam">
-                <label for="voornaam" class="voornaam_label">Voornaam</label>
-                <input type="voornaam" name="voornaam" id="voornaam" class="voornaam_input" required>
-            </div>
-
-
-             <div class="achternaam">
-                <label for="achternaam" class="achternaam_label">Achternaam</label>
-                <input type="achternaam" name="achternaam" id="voornaam" class="achternaam_input" required>
-            </div>
-
-              <div class="probleem">
-                <label for="probleem">Beschrijving van uw probleem</label>
-                <textarea class="probleem_invul" name="probleem" id="probleem" rows="10" required
-                    ></textarea>
-
-            </div>
-
-        
-            <div class="verstuur_bericht">
-                <button class="knop_verstuur_bericht">VERSTUUR</button>
-            </div>
-
-        </form>
-    </main>
+</main>
