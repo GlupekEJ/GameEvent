@@ -62,7 +62,7 @@ input {
   padding-right: 0.5rem;
   border-radius: 10px;
   border: #202323 1px solid;
-  box-shadow: 0px 15px 10px -15px #111;
+  /*box-shadow: 0px 15px 10px -15px #111;*/
 }
 
 .transactie,
@@ -87,7 +87,7 @@ input {
 }
 
 textarea {
-  resize: none;
+ 
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   padding-bottom: 0.7rem;
@@ -97,7 +97,7 @@ textarea {
   border-radius: 10px;
   max-width: 100%;
   border: #202323 1px solid;
-  box-shadow: 0px 15px 10px -15px #111;
+  /*box-shadow: 0px 15px 10px -15px #111;*/
 }
 
 .verstuur_bericht {
@@ -124,4 +124,18 @@ textarea {
 
 .knop_verstuur_bericht:hover {
   background-color: #32b772;
+}
+
+
+/*TEST TEMPLATE DRIVEN FORM*/
+
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 }
