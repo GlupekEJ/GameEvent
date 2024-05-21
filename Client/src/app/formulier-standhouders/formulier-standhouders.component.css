@@ -127,6 +127,7 @@ textarea {
 
 .knopje {
   text-decoration: none;
+  color: #0e0e0e;
 }
 
 mat-form-field {

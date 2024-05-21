@@ -3,93 +3,50 @@
     <p>Problemen met uw bestelling?</p>
     <p>Laat het ons weten! 👇</p>
   </section>
-  <form class="contactformulier">
-    <div class="transactie">
-      <label for="transactie" class="transactie_label">Transactie ID</label>
-      <input
-        type="text"
-        name="transactie"
-        id="transactie"
-        class="transactie_input"
-        required
-      />
-    </div>
+  <form class="contactformulier" [formGroup]="form">
 
-    <div class="email">
-      <label for="email" class="email_label">E-mailadres</label>
+    <mat-form-field appearance="fill">
+      <mat-label>E-mail</mat-label>
       <input
         type="email"
-        name="email"
-        id="email"
-        class="email_input"
-        required
+        matInput
+        placeholder="E-mail@email"
+        formControlName="email"
       />
-    </div>
+    </mat-form-field>
 
-    <div class="voornaam">
-      <label for="voornaam" class="voornaam_label">Voornaam</label>
+    <mat-form-field appearance="fill">
+      <mat-label>Wat is je voornaam</mat-label>
       <input
-        type="voornaam"
-        name="voornaam"
-        id="voornaam"
-        class="voornaam_input"
-        required
+        type="text"
+        matInput
+        placeholder="Voornaam"
+        formControlName="voornaam"
       />
-    </div>
+    </mat-form-field>
 
-    <div class="achternaam">
-      <label for="achternaam" class="achternaam_label">Achternaam</label>
+    <mat-form-field appearance="fill">
+      <mat-label>Wat is je achternaam</mat-label>
       <input
-        type="achternaam"
-        name="achternaam"
-        id="voornaam"
-        class="achternaam_input"
-        required
+        type="text"
+        matInput
+        placeholder="Achternaam"
+        formControlName="achternaam"
       />
-    </div>
+    </mat-form-field>
 
-    <div class="probleem">
-      <label for="probleem">Beschrijving van uw probleem</label>
+    <mat-form-field class="example-full-width">
+      <mat-label>Beschrijving van uw probleem</mat-label>
       <textarea
-        class="probleem_invul"
-        name="probleem"
-        id="probleem"
-        rows="10"
-        required
+        matInput
+        placeholder="Bijv. Tickets niet ontvangen."
+        formControlName="beschrijving"
       ></textarea>
-    </div>
+    </mat-form-field>
 
     <div class="verstuur_bericht">
       <button class="knop_verstuur_bericht">VERSTUUR</button>
     </div>
   </form>
-
-  <!-- TEST TEMPLATE DRIVEN FORM -->
-
-  <form class="contactformulier">
-    <mat-form-field class="example-full-width">
-      <mat-label>Transactie ID</mat-label>
-      <input matInput placeholder="" value="" />
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
-      <mat-label>Voornaam</mat-label>
-      <input matInput placeholder="" value="" />
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
-      <mat-label>Achternaam</mat-label>
-      <input matInput placeholder="" value="" />
-    </mat-form-field>
-
-    
-    <mat-form-field class="example-full-width">
-      <mat-label>Beschrijving van uw probleem</mat-label>
-      <textarea matInput placeholder="Bijv. Tickets niet ontvangen."></textarea>
-    </mat-form-field>
-
-    <button mat-flat-button color="primary">VERSTUUR</button>
-  </form>
-
-  
 </main>
+
