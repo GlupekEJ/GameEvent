@@ -2,77 +2,61 @@
   <p>
     <mat-form-field appearance="fill">
       <mat-label>Fill form field</mat-label>
-      <input matInput placeholder="Placeholder" />
-      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-      <mat-hint>Hint</mat-hint>
+      <input matInput placeholder="Bedrijfsnaam" />
     </mat-form-field>
   </p>
   <p>
     <mat-form-field appearance="outline">
-      <mat-label>Outline form field</mat-label>
-      <input matInput placeholder="Placeholder" />
-      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-label>E-mail</mat-label>
+      <input matInput placeholder="E-mail@email" />
+
       <mat-hint>Hint</mat-hint>
     </mat-form-field>
   </p>
   <section>
     <p>Reserveer je tafels</p>
   </section>
-  <form class="contactformulier">
-    <div class="transactie">
-      <label for="transactie" class="transactie_label">Bedrijf</label>
+  <form class="contactformulier" [formGroup]="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Wat is de naam van je bedrijf</mat-label>
       <input
         type="text"
-        name="transactie"
-        id="transactie"
-        class="transactie_input"
-        required
+        matInput
+        placeholder="Bedrijfsnaam"
+        formControlName="companyName"
       />
-    </div>
+    </mat-form-field>
 
-    <div class="email">
-      <label for="email" class="email_label">E-mailadres</label>
+    <mat-form-field appearance="fill">
+      <mat-label>E-mail</mat-label>
       <input
         type="email"
-        name="email"
-        id="email"
-        class="email_input"
-        required
+        matInput
+        placeholder="E-mail@email"
+        formControlName="email"
       />
-    </div>
+    </mat-form-field>
 
-    <div class="voornaam">
-      <label for="voornaam" class="voornaam_label">Voornaam</label>
+    <mat-form-field appearance="fill">
+      <mat-label>Wat is je voornaam</mat-label>
       <input
-        type="voornaam"
-        name="voornaam"
-        id="voornaam"
-        class="voornaam_input"
-        required
+        type="text"
+        matInput
+        placeholder="Voornaam"
+        formControlName="voornaam"
       />
-    </div>
+    </mat-form-field>
 
-    <div class="achternaam">
-      <label for="achternaam" class="achternaam_label">Achternaam</label>
+    <mat-form-field appearance="fill">
+      <mat-label>Wat is je achternaam</mat-label>
       <input
-        type="achternaam"
-        name="achternaam"
-        id="voornaam"
-        class="achternaam_input"
-        required
+        type="text"
+        matInput
+        placeholder="Achternaam"
+        formControlName="achternaam"
       />
-    </div>
+    </mat-form-field>
 
-    <div class="probleem">
-      <label for="probleem">Categorie</label>
-      <input type="radio" id="all" name="soortHandel" value="All" />
-        <label for="all">All</label><br />
-        <input type="radio" id="retro" name="soortHandel" value="Retro" />  
-      <label for="retro">Retro</label><br />
-       
-      <input type="radio" id="javascript" name="soortHandel" value="Merch" />  
-      <label for="javascript">Merch</label>
-    </div>
     <label id="example-radio-group-label"
       >Select the categorie you will be selling</label
     >

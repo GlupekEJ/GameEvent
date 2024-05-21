@@ -29,6 +29,8 @@ section {
 /*     CONTACTFORMULIER     */
 
 .contactformulier {
+  display: flex;
+  flex-direction: column;
   background: rgb(125, 249, 184);
   background: linear-gradient(
     90deg,
@@ -42,6 +44,7 @@ section {
   margin-right: 1rem;
   padding-left: 4rem;
   padding-right: 4rem;
+  padding-top: 2em;
   margin-bottom: 10rem;
 }
 
@@ -124,4 +127,9 @@ textarea {
 
 .knopje {
   text-decoration: none;
+}
+
+mat-form-field {
+  margin-top: 2em;
+  height: 5.5em;
 }
