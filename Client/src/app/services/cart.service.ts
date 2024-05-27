@@ -19,5 +19,6 @@ export class CartService {
   }
   getTickets() {
     return this.cartTickets;
+    this.updateCartInLS();
   }
 }
