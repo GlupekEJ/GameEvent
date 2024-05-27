@@ -6,6 +6,7 @@ import { FloorplanComponent } from './floorplan/floorplan.component';
 import { StandhoudersComponent } from './standhouders/standhouders.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormulierStandhoudersComponent } from './formulier-standhouders/formulier-standhouders.component';
+import { CartComponent } from './cart/cart.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,4 +16,5 @@ export const routes: Routes = [
   { path: 'standhouders', component: StandhoudersComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'formulier-standhouders', component: FormulierStandhoudersComponent },
+  { path: 'cart', component: CartComponent },
 ];
