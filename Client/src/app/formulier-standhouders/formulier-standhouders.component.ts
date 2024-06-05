@@ -16,6 +16,10 @@ interface Food {
   value: string;
   viewValue: string;
 }
+interface Animal {
+  name: string;
+  sound: string;
+}
 
 @Component({
   selector: 'app-formulier-standhouders',
@@ -33,7 +37,25 @@ interface Food {
   styleUrl: './formulier-standhouders.component.css',
 })
 export class FormulierStandhoudersComponent {
+  //testing
+
+  foodControl = new FormControl<Food | null>(null, Validators.required);
+  selectFormControl1 = new FormControl('', Validators.required);
   foods: Food[] = [
+    { value: 'artiest-0', viewValue: 'Artiest' },
+    { value: 'cosplay-1', viewValue: 'Cosplay' },
+    { value: 'handelaar-2', viewValue: 'Handelaar' },
+  ];
+  /* colorControl = new FormControl('');
+
+  constructor() {
+    this.colorControl.valueChanges.subscribe((value) => {
+      console.log(value);
+    });
+  }*/
+
+  //foods
+  /*foods: Food[] = [
     { value: 'artiest-0', viewValue: 'Artiest' },
     { value: 'cosplay-1', viewValue: 'Cosplay' },
     { value: 'handelaar-2', viewValue: 'Handelaar' },
@@ -71,8 +93,7 @@ export class FormulierStandhoudersComponent {
     'H8',
     'H9',
     'H10',
-  ];
-
+  ];*/
 
   /*fb = inject(FormBuilder);
   form = this.fb.group({
@@ -83,4 +104,3 @@ export class FormulierStandhoudersComponent {
   });
   */
 }
-
