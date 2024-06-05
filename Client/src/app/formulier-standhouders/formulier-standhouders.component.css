@@ -1,12 +1,12 @@
-/*     ALGEMENE ASTERISK     */
+
+
+/*
 
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
-
-/*     MAIN     */
 
 main {
   margin: auto;
@@ -26,7 +26,7 @@ section {
   margin-bottom: 4em;
 }
 
-/*     CONTACTFORMULIER     */
+
 
 .contactformulier {
   display: flex;
@@ -132,4 +132,122 @@ textarea {
 mat-form-field {
   margin-top: 2em;
   height: 5.5em;
+}
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+main {
+  margin: auto;
+  max-width: 80rem;
+}
+
+section.bevraging,
+h1,
+p {
+  font-family: "Kanit", sans-serif;
+}
+
+.afrekenen {
+  text-decoration: none;
+  background-color: #7df9b8;
+  padding-top: 1rem;
+   padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: #202323 1px solid;
+  font-size: clamp(0.8em, 2vw, 1.1em);
+  display: inline-block;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #0e0e0e;
+   text-align: center;
+}
+
+.afrekenen:hover {
+  background-color: #32b772;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+.reservatiepagina {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titel_overzicht {
+  text-align: center;
+}
+
+.overzicht {
+  font-family: "Inter", sans-serif;
+  background-color: #061e3a;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+    padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  color: #f8f8f8;
+  border-radius: 20px;
+  min-width: 20%;
+  text-align: center;
+}
+
+
+
+.plattegrond {
+  margin-bottom: 10rem;
+}
+
+.kies_je_categorie {
+  margin-bottom: 10rem;
+}
+
+.plaatsen {
+  margin-bottom: 10rem;
+}
+
+.bestelling_plaatsen_mogelijk {
+  margin-bottom: 4rem;
+}
+
+.gekozen_categorie {
+  border-bottom: 1px solid #f8f8f8;
+  padding-bottom: 3rem;
+  padding-top: 1.2rem;
+  text-align: left;
+}
+
+.webshop {
+  border-bottom: 1px solid #f8f8f8;
+  padding-bottom: 3rem;
+  padding-top: 1.2rem;
+  text-align: left;
+}
+
+.standplaatsen {
+  border-bottom: 1px solid #f8f8f8;
+  padding-bottom: 3rem;
+  padding-top: 1.2rem;
+  text-align: left;
+}
+
+
+.totaalprijs {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: left;
 }

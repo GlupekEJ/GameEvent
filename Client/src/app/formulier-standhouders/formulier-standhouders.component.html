@@ -1,3 +1,4 @@
+<!-- 
 <main>
   <p>
     <mat-form-field appearance="fill">
@@ -78,4 +79,67 @@
       </button>
     </div>
   </form>
+</main>
+
+-->
+
+<main>
+  <section class="reservatiepagina">
+    <section class="bevraging">
+      <article class="plattegrond">
+        <h1>Plattegrond</h1>
+      </article>
+
+      <article class="kies_je_categorie">
+        <h1>Kies je categorie</h1>
+        <mat-form-field>
+          <mat-label>Categoriëen</mat-label>
+          <mat-select>
+            @for (food of foods; track food) {
+            <mat-option [value]="food.value">{{ food.viewValue }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </article>
+
+      <article class="plaatsen">
+        <h1>Kies je plaats(en)</h1>
+        <mat-form-field>
+          <mat-label>Plaatsen</mat-label>
+          <mat-select [formControl]="toppings" multiple>
+            @for (topping of toppingList; track topping) {
+            <mat-option [value]="topping">{{ topping }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </article>
+
+      
+
+      <h2 class="bestelling_plaatsen_mogelijk">
+        Bestelling plaatsen mogelijk?
+      </h2>
+
+      <h2 class="link_naar_webshop">Link naar webshop</h2>
+    </section>
+
+    <section class="overzicht">
+      <h1 class="titel_overzicht">OVERZICHT</h1>
+      <article class="gekozen_categorie">
+        <h2>Categorie</h2>
+      </article>
+
+      <article class="webshop">
+        <h2>Webshop</h2>
+      </article>
+
+      <article class="standplaatsen">
+        <h2>Standplaats(en)</h2>
+      </article>
+
+      <p class="totaalprijs">TOTAAL</p>
+
+      <a class="afrekenen" href="">AFREKENEN</a>
+    </section>
+  </section>
 </main>
