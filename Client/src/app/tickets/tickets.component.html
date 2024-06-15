@@ -1,5 +1,6 @@
 <h1>Koop jouw tickets hier</h1>
 <section>
+
   @for(ticket of tickets;track ticket.id){
   <div class="{{ ticket.className }}">
     <div class="{{ ticket.className2 }}">
@@ -22,7 +23,9 @@
           </button>
         </div>
       </div>
+
       <h2>€ {{ ticket.price }}</h2>
+
       <button (click)="voegToe(ticket)">VOEG TOE</button>
     </div>
   </div>

@@ -1,6 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { CartService } from '../services/cart.service';
+
 import { Ticket } from '../models/Ticket';
+
+
+
 
 @Component({
   selector: 'app-cart',
