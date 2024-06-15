@@ -1,0 +1,33 @@
+<main>
+  <h1>Kies je betaalmethode</h1>
+
+  <section class="betalen">
+    <article>
+      <label id="example-radio-group-label1"></label>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label1"
+        class="example-radio-group1"
+        [(ngModel)]="paymentOptions"
+      >
+        @for (paymentOption of paymentOption; track paymentOption) {
+        <mat-radio-button
+          class="example-radio-button"
+          [value]="paymentOption"
+          >{{ paymentOption }}</mat-radio-button
+        >
+        }
+      </mat-radio-group>
+    </article>
+
+    
+
+    <article class="logo_betaalmethodes">
+      <img src="assets/images/Bancontact.png" alt="Logo Bancontact" />
+      <img src="assets/images/Mastercard.png" alt="Logo Mastercard" />
+      <img src="assets/images/Visa.png" alt="Logo Visa" />
+      <img src="assets/images/Paypal.png" alt="Logo PaPpal" />
+    </article>
+
+     <a class="afrekenen" href="betaling-geslaagd">AFREKENEN</a>
+  </section>
+</main>

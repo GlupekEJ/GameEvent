@@ -1,3 +1,5 @@
+/*
+
 .floorplanSection {
   background-color: rgb(85, 84, 84);
   height: 100vh;
@@ -52,4 +54,25 @@
     height: 25px;
     width: 55px;
   }
+}
+
+*/
+
+* {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  max-width: 100%;
+  height: auto;
 }

@@ -88,62 +88,167 @@
     <section class="bevraging">
       <article class="plattegrond">
         <h1>Plattegrond</h1>
+        <button class="download_plattegrond" (click)="generatePlattegrond()">
+          Download plattegrond
+        </button>
       </article>
+
+      <article class="voornaam_input">
+        <h1 class="titel_voornaam">Voornaam</h1>
+
+        <form>
+          <input
+            type="text"
+            placeholder=""
+            [(ngModel)]="inputVoornaam"
+            name="inputVoornaam"
+          />
+        </form>
+      </article>
+
+      <article class="achternaam_input">
+        <h1 class="titel_achternaam">Achternaam</h1>
+
+        <form>
+          <input
+            type="text"
+            placeholder=""
+            [(ngModel)]="inputAchternaam"
+            name="inputAchternaam"
+          />
+        </form>
+      </article>
+
+    
+
+
+  
 
       <article class="kies_je_categorie">
-        <h1>Kies je categorie</h1>
+        <h1 class="titel_kies_je_categorie">Kies je categorie</h1>
+        <label id="example-radio-group-label1"></label>
+        <mat-radio-group
+          aria-labelledby="example-radio-group-label1"
+          class="example-radio-group1"
+          [(ngModel)]="categoryControl"
+        >
+          @for (categories of categories; track categories) {
+          <mat-radio-button class="example-radio-button" [value]="categories">{{
+            categories
+          }}</mat-radio-button>
+          }
+        </mat-radio-group>
+      </article>
+
+      <article class="plaatsen">
+        <h1 class="titel_plaatsen">Kies je plaats(en)</h1>
+        <p>A = Artiesten</p>
+        <p>C = Cosplay</p>
+        <p>H = Handelaar</p>
         <mat-form-field>
-          <mat-label>Categoriëen</mat-label>
-          <mat-select [formControl]="foodControl" required>
+          <mat-label>Plaatsen</mat-label>
+          <mat-select [formControl]="stands" multiple>
             <mat-option>--</mat-option>
-            @for (food of foods; track food) {
-            <mat-option [value]="food">{{ food.value }}</mat-option>
+            @for (stand of standList; track stand) {
+            <mat-option [value]="stand">{{ stand }}</mat-option>
             }
           </mat-select>
-          @if (foodControl.hasError('required')) {
-          <mat-error>Please choose a category</mat-error>
-          }
-          <mat-hint>{{ foodControl.value?.viewValue }}</mat-hint>
         </mat-form-field>
       </article>
 
-      <!--
-      <article class="plaatsen">
-        <h1>Kies je plaats(en)</h1>
-        <mat-form-field>
-          <mat-label>Plaatsen</mat-label>
-          <mat-select [formControl]="toppings" multiple>
-            @for (topping of toppingList; track topping) {
-            <mat-option [value]="topping">{{ topping }}</mat-option>
-            }
-          </mat-select>
-        </mat-form-field>
-      </article>-->
+      <article class="naam_bedrijf_input">
+        <h1 class="titel_naam_bedrijf">Naam van bedrijf</h1>
+        <form>
+          <input
+            type="text"
+            placeholder=""
+            [(ngModel)]="inputNaamBedrijf"
+            name="inputNaamBedrijf"
+          />
+        </form>
+      </article>
 
-      <h2 class="bestelling_plaatsen_mogelijk">
-        Bestelling plaatsen mogelijk?
-      </h2>
+      <article class="bestelling_plaatsen_mogelijk">
+        <h1 class="titel_bestelling_plaatsen_mogelijk">
+          Bestellingen plaatsen mogelijk?
+        </h1>
+        <label id="example-radio-group-label"></label>
+        <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+          [(ngModel)]="orderOptions"
+        >
+          @for (options of options; track options) {
+          <mat-radio-button class="example-radio-button" [value]="options">{{
+            options
+          }}</mat-radio-button>
+          }
+        </mat-radio-group>
+      </article>
 
-      <h2 class="link_naar_webshop">Link naar webshop</h2>
+      <article class="link_naar_webshop_input">
+        <h1 class="titel_link_naar_webshop">Link naar webshop</h1>
+        <form>
+          <input
+            type="text"
+            placeholder="Weblink"
+            [(ngModel)]="inputLinkWebshop"
+            name="inputLinkWebshop"
+          />
+        </form>
+      </article>
     </section>
 
     <section class="overzicht">
-      <h1 class="titel_overzicht">OVERZICHT</h1>
+
+       <h1 class="titel_overzicht">OVERZICHT</h1>
+
+<article class="voornaam">
+        <h2 class="voornaam_h2">Voornaam</h2>
+        
+        <mat-hint>{{inputVoornaam}}</mat-hint>
+      </article>
+
+       <article class="achternaam">
+        <h2 class="achternaam_h2">Achternaam</h2>
+        <mat-hint>{{inputAchternaam}}</mat-hint>
+        
+      </article>
+
       <article class="gekozen_categorie">
-        <h2>Categorie</h2>
+       
+        <h2 class="categorie_h2">Categorie</h2>
+        <mat-hint>{{ categoryControl }}</mat-hint>
       </article>
 
-      <article class="webshop">
-        <h2>Webshop</h2>
+       <article class="standplaatsen">
+        <h2 class="standplaatsen_h2">Standplaats(en)</h2>
+
+        <mat-hint>{{ stands.value }}</mat-hint>
       </article>
 
-      <article class="standplaatsen">
-        <h2>Standplaats(en)</h2>
+      
+      <article class="bedrijfsnaam">
+        <h2 class="bedrijfsnaam_h2">Bedrijfsnaam</h2>
+        
+        <mat-hint>{{inputNaamBedrijf}}</mat-hint>
       </article>
 
+         <article class="bestelling">
+        <h2 class="bestelling_h2">Bestellingen plaatsen mogelijk</h2>
+        <mat-hint>{{ orderOptions }}</mat-hint>
+      </article>
+
+       <article class="webshop">
+        <h2 class="webshop_h2">Webshop</h2>
+        <mat-hint>{{ inputLinkWebshop }}</mat-hint>
+        
+      </article>
+
+      
       <p class="totaalprijs">TOTAAL</p>
 
-      <a class="afrekenen" href="">AFREKENEN</a>
+      <a class="afrekenen" href="betaalpagina">VERDER NAAR BETAALWIJZE</a>
     </section>
   </section>
 </main>
