@@ -1,0 +1,16 @@
+<ul>
+  <div class="cartBasket">
+    @for(ticket of cartService.getTickets();track ticket.id) {
+    <li>
+      <h2>{{ ticket.name }}</h2>
+      <p>{{ ticket.price }}€</p>
+
+      <button (click)="removeFromCart(ticket)">Delete</button>
+    </li>
+    }
+    <div>
+      <h2>Total: {{ cartService.getTotalPrice() }}</h2>
+    </div>
+    <a routerLink="/cart">Go to Cart</a>
+  </div>
+</ul>

@@ -269,12 +269,24 @@ h2, .totaalprijs {
   text-align: left;
 }
 
+.titel_totaalprijs_met_prijs {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 
 .totaalprijs {
     padding-top: 4rem;
     padding-bottom: 4rem;
     text-align: left;
+}
+
+.prijs {
+     padding-top: 5.5rem;
+    padding-bottom: 4rem;
+    text-align: left;
+    font-size: clamp(1em, 2vw, 1.2em);
 }
 
 @media screen and (max-width: 53rem) {
@@ -287,5 +299,19 @@ h2, .totaalprijs {
       margin-left: auto;
       margin-right: auto;
       width: calc(100% - 2rem); 
+    }
+
+    .titel_totaalprijs_met_prijs {
+      flex-direction: column;
+    }
+
+    .totaalprijs {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+
+    .prijs {
+      text-align: center;
+      padding-top: 0rem;
     }
 }
