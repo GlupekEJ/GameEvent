@@ -1,3 +1,38 @@
 .cartContainer {
   border: saddlebrown solid 2px;
+  background-color: #061e3a;
+  color: #f7fff7;
 }
+ul {
+  color: #f7fff7;
+  background-color: #061e3a;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+  list-style-type: none;
+  font-size: large;
+  font-family: "Inter", sans-serif;
+  padding: 5px;
+}
+li:nth-child(odd) {
+  border: solid #133b75 2px;
+  padding: 10px;
+}
+h1 {
+  color: #061e3a;
+  background-color: #f7fff7;
+  font-family: "Inter", sans-serif;
+}
+
+/*
+emailjs.send("service_68v6fqm","template_8dzntis",{
+from_name: "Lars",
+to_name: "AELiantie",
+beschrijving: "Mijn probleem",
+reply_to: "Lars",
+});
+
+*/

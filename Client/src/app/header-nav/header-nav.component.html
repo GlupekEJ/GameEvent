@@ -15,7 +15,10 @@
         <li><a routerLink="/standhouders">Standhouders</a></li>
         <li><a routerLink="/contact">Contact</a></li>
         <li>
-          <i class="fa-solid fa-cart-shopping"><a routerLink="/cart">c</a></i>
+          <div class="cartIcon" (click)="displayCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="">{{ getCartCount() }}</span>
+          </div>
         </li>
       </ul>
     </div>
@@ -24,3 +27,7 @@
     </div>
   </nav>
 </header>
+@if(cartDisplay){
+<app-cart-basket></app-cart-basket>
+
+}
