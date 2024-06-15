@@ -4,16 +4,14 @@ import { CartService } from '../services/cart.service';
 import { Ticket } from '../models/Ticket';
 import { CartComponent } from '../cart/cart.component';
 
-
 @Component({
   selector: 'app-tickets',
   standalone: true,
   imports: [],
   templateUrl: './tickets.component.html',
-  styleUrl: './tickets.component.css',
+  styleUrls: ['./tickets.component.css'],
 })
 export class TicketsComponent {
-  cartService = inject(CartService);
   tickets: Ticket[] = [
     new Ticket(
       1,
@@ -23,8 +21,7 @@ export class TicketsComponent {
          Toegang tot bepaalde exclusieve presentaties, demo's of panels die alleen beschikbaar zijn op die dag.`,
       30,
       'dag1',
-      'dag',
-      1
+      'dag'
     ),
     new Ticket(
       2,
@@ -41,8 +38,7 @@ export class TicketsComponent {
         zijn voor weekendticket-houders.`,
       50,
       'week1',
-      'week',
-      1
+      'week'
     ),
     new Ticket(
       3,
@@ -58,10 +54,13 @@ export class TicketsComponent {
       comfortabele zitplaatsen.`,
       70,
       'vip1',
-      'vip',
-      1
+      'vip'
     ),
   ];
+
+  constructor(public cartService: CartService) {
+    this.cartService = cartService;
+  }
   voegToe(ticket: Ticket) {
     this.cartService.voegTicketToe(ticket);
     console.log('added');
