@@ -1,6 +1,6 @@
 <p>cart works!</p>
 @for(ticket of cartService.getTickets();track ticket.id) {
 <h2>{{ ticket.name }}</h2>
-<p>{{ ticket.price }}€</p>
+<p>{{ ticket.price|currency : 'EUR' }}</p>
 
 }
