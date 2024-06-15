@@ -119,11 +119,6 @@
         </form>
       </article>
 
-    
-
-
-  
-
       <article class="kies_je_categorie">
         <h1 class="titel_kies_je_categorie">Kies je categorie</h1>
         <label id="example-radio-group-label1"></label>
@@ -200,55 +195,51 @@
     </section>
 
     <section class="overzicht">
+      <h1 class="titel_overzicht">OVERZICHT</h1>
 
-       <h1 class="titel_overzicht">OVERZICHT</h1>
-
-<article class="voornaam">
+      <article class="voornaam">
         <h2 class="voornaam_h2">Voornaam</h2>
-        
-        <mat-hint>{{inputVoornaam}}</mat-hint>
+
+        <mat-hint>{{ inputVoornaam }}</mat-hint>
       </article>
 
-       <article class="achternaam">
+      <article class="achternaam">
         <h2 class="achternaam_h2">Achternaam</h2>
-        <mat-hint>{{inputAchternaam}}</mat-hint>
-        
+        <mat-hint>{{ inputAchternaam }}</mat-hint>
       </article>
 
       <article class="gekozen_categorie">
-       
         <h2 class="categorie_h2">Categorie</h2>
         <mat-hint>{{ categoryControl }}</mat-hint>
       </article>
 
-       <article class="standplaatsen">
+      <article class="standplaatsen">
         <h2 class="standplaatsen_h2">Standplaats(en)</h2>
 
         <mat-hint>{{ stands.value }}</mat-hint>
       </article>
 
-      
       <article class="bedrijfsnaam">
         <h2 class="bedrijfsnaam_h2">Bedrijfsnaam</h2>
-        
-        <mat-hint>{{inputNaamBedrijf}}</mat-hint>
+
+        <mat-hint>{{ inputNaamBedrijf }}</mat-hint>
       </article>
 
-         <article class="bestelling">
+      <article class="bestelling">
         <h2 class="bestelling_h2">Bestellingen plaatsen mogelijk</h2>
         <mat-hint>{{ orderOptions }}</mat-hint>
       </article>
 
-       <article class="webshop">
+      <article class="webshop">
         <h2 class="webshop_h2">Webshop</h2>
         <mat-hint>{{ inputLinkWebshop }}</mat-hint>
-        
       </article>
 
-      
       <p class="totaalprijs">TOTAAL</p>
 
-      <a class="afrekenen" href="betaalpagina">VERDER NAAR BETAALWIJZE</a>
+      <a class="afrekenen" routerLink="/betaalpagina"
+        >VERDER NAAR BETAALWIJZE</a
+      >
     </section>
   </section>
 </main>

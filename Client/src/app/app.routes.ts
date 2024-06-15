@@ -9,6 +9,8 @@ import { FormulierStandhoudersComponent } from './formulier-standhouders/formuli
 import { CartComponent } from './cart/cart.component';
 import { BetaalpaginaComponent } from './betaalpagina/betaalpagina.component';
 import { BetalingGeslaagdComponent } from './betaling-geslaagd/betaling-geslaagd.component';
+import { TicketBetaalpaginaComponent } from './ticketbetaalpagina/ticketbetaalpagina.component';
+import { TicketbetalingokComponent } from './ticketbetalingok/ticketbetalingok.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +21,8 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'formulier-standhouders', component: FormulierStandhoudersComponent },
   { path: 'cart', component: CartComponent },
-  { path :'betaalpagina', component: BetaalpaginaComponent},
-  { path : 'betaling-geslaagd', component: BetalingGeslaagdComponent}
+  { path: 'betaalpagina', component: BetaalpaginaComponent },
+  { path: 'betaling-geslaagd', component: BetalingGeslaagdComponent },
+  { path: 'ticketbetaalpagina', component: TicketBetaalpaginaComponent },
+  { path: 'ticketbetalingok', component: TicketbetalingokComponent },
 ];
