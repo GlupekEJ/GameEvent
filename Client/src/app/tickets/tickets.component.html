@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <h2>€ {{ ticket.price }}</h2>
+    <h2>{{ ticket.price|currency : "EUR" }}</h2>
 
       <button (click)="voegToe(ticket)">VOEG TOE</button>
     </div>
