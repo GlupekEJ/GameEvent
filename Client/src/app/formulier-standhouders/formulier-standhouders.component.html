@@ -135,9 +135,11 @@
       </article>
 
       <article class="standplaatsen">
+
         <h2 class="h2_standplaatsen">Standplaats(en)</h2>
         <mat-hint>{{standControl.value?.place}}</mat-hint>
       </article>
+
 
 
       <article class="bedrijfsnaam">
@@ -156,12 +158,17 @@
         <mat-hint>{{ inputLinkWebshop }}</mat-hint>
       </article>
 
+
+
       <div class="titel_totaalprijs_met_prijs">
         <p class="totaalprijs">TOTAAL</p>
         <mat-hint class="prijs">€{{ standControl.value?.price }}</mat-hint>
       </div>
 
-      <a class="afrekenen" href="betaalpagina">VERDER NAAR BETAALWIJZE</a>
+
+      <a class="afrekenen" routerLink="/betaalpagina"
+        >VERDER NAAR BETAALWIJZE</a
+      >
     </section>
   </section>
 </main>
