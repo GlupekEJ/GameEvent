@@ -1,88 +1,3 @@
-<!-- 
-<main>
-  <p>
-    <mat-form-field appearance="fill">
-      <mat-label>Fill form field</mat-label>
-      <input matInput placeholder="Bedrijfsnaam" />
-    </mat-form-field>
-  </p>
-  <p>
-    <mat-form-field appearance="outline">
-      <mat-label>E-mail</mat-label>
-      <input matInput placeholder="E-mail@email" />
-
-      <mat-hint>Hint</mat-hint>
-    </mat-form-field>
-  </p>
-  <section>
-    <p>Reserveer je tafels</p>
-  </section>
-  <form class="contactformulier" [formGroup]="form">
-    <mat-form-field appearance="fill">
-      <mat-label>Wat is de naam van je bedrijf</mat-label>
-      <input
-        type="text"
-        matInput
-        placeholder="Bedrijfsnaam"
-        formControlName="companyName"
-      />
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-      <mat-label>E-mail</mat-label>
-      <input
-        type="email"
-        matInput
-        placeholder="E-mail@email"
-        formControlName="email"
-      />
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-      <mat-label>Wat is je voornaam</mat-label>
-      <input
-        type="text"
-        matInput
-        placeholder="Voornaam"
-        formControlName="voornaam"
-      />
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-      <mat-label>Wat is je achternaam</mat-label>
-      <input
-        type="text"
-        matInput
-        placeholder="Achternaam"
-        formControlName="achternaam"
-      />
-    </mat-form-field>
-
-    <label id="example-radio-group-label"
-      >Select the categorie you will be selling</label
-    >
-    <mat-radio-group
-      aria-labelledby="example-radio-group-label"
-      class="example-radio-group"
-    >
-      @for (categorie of categories; track categorie) {
-      <mat-radio-button class="example-radio-button" [value]="categorie">{{
-        categorie
-      }}</mat-radio-button>
-      }
-    </mat-radio-group>
-    <div>you sell: {{ categorySelection }}</div>
-
-    <div class="verstuur_bericht">
-      <button class="knop_verstuur_bericht">
-        <a class="knopje" href="floorplan">RESERVEER</a>
-      </button>
-    </div>
-  </form>
-</main>
-
--->
-
 <main>
   <section class="reservatiepagina">
     <section class="bevraging">
@@ -119,11 +34,6 @@
         </form>
       </article>
 
-    
-
-
-  
-
       <article class="kies_je_categorie">
         <h1 class="titel_kies_je_categorie">Kies je categorie</h1>
         <label id="example-radio-group-label1"></label>
@@ -141,19 +51,25 @@
       </article>
 
       <article class="plaatsen">
-        <h1 class="titel_plaatsen">Kies je plaats(en)</h1>
+        <h1 class="titel_plaatsen">Kies je plaats</h1>
         <p>A = Artiesten</p>
         <p>C = Cosplay</p>
         <p>H = Handelaar</p>
-        <mat-form-field>
+         <mat-form-field>
           <mat-label>Plaatsen</mat-label>
-          <mat-select [formControl]="stands" multiple>
+          <mat-select [formControl]="standControl" required>
             <mat-option>--</mat-option>
-            @for (stand of standList; track stand) {
-            <mat-option [value]="stand">{{ stand }}</mat-option>
+            @for (stand of stands; track stand) {
+            <mat-option [value]="stand">{{ stand.place }}</mat-option>
             }
           </mat-select>
+          @if (standControl.hasError('required')) {
+          <mat-error>Please choose a category</mat-error>
+          }
         </mat-form-field>
+       
+
+
       </article>
 
       <article class="naam_bedrijf_input">
@@ -200,53 +116,50 @@
     </section>
 
     <section class="overzicht">
+      <h1 class="titel_overzicht">OVERZICHT</h1>
 
-       <h1 class="titel_overzicht">OVERZICHT</h1>
-
-<article class="voornaam">
+      <article class="voornaam">
         <h2 class="voornaam_h2">Voornaam</h2>
-        
-        <mat-hint>{{inputVoornaam}}</mat-hint>
+
+        <mat-hint>{{ inputVoornaam }}</mat-hint>
       </article>
 
-       <article class="achternaam">
+      <article class="achternaam">
         <h2 class="achternaam_h2">Achternaam</h2>
-        <mat-hint>{{inputAchternaam}}</mat-hint>
-        
+        <mat-hint>{{ inputAchternaam }}</mat-hint>
       </article>
 
       <article class="gekozen_categorie">
-       
         <h2 class="categorie_h2">Categorie</h2>
         <mat-hint>{{ categoryControl }}</mat-hint>
       </article>
 
-       <article class="standplaatsen">
-        <h2 class="standplaatsen_h2">Standplaats(en)</h2>
-
-        <mat-hint>{{ stands.value }}</mat-hint>
+      <article class="standplaatsen">
+        <h2 class="h2_standplaatsen">Standplaats(en)</h2>
+        <mat-hint>{{standControl.value?.place}}</mat-hint>
       </article>
 
-      
+
       <article class="bedrijfsnaam">
         <h2 class="bedrijfsnaam_h2">Bedrijfsnaam</h2>
-        
-        <mat-hint>{{inputNaamBedrijf}}</mat-hint>
+
+        <mat-hint>{{ inputNaamBedrijf }}</mat-hint>
       </article>
 
-         <article class="bestelling">
+      <article class="bestelling">
         <h2 class="bestelling_h2">Bestellingen plaatsen mogelijk</h2>
         <mat-hint>{{ orderOptions }}</mat-hint>
       </article>
 
-       <article class="webshop">
+      <article class="webshop">
         <h2 class="webshop_h2">Webshop</h2>
         <mat-hint>{{ inputLinkWebshop }}</mat-hint>
-        
       </article>
 
-      
-      <p class="totaalprijs">TOTAAL</p>
+      <div class="titel_totaalprijs_met_prijs">
+        <p class="totaalprijs">TOTAAL</p>
+        <mat-hint class="prijs">€{{ standControl.value?.price }}</mat-hint>
+      </div>
 
       <a class="afrekenen" href="betaalpagina">VERDER NAAR BETAALWIJZE</a>
     </section>
