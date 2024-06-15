@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { CartService } from '../services/cart.service';
-import { CurrencyPipe } from '@angular/common';
+
 
 @Component({
   selector: 'app-tickets',
   standalone: true,
-  imports: [CurrencyPipe],
+  imports: [],
   templateUrl: './tickets.component.html',
   styleUrl: './tickets.component.css',
 })
