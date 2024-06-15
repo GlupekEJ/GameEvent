@@ -1,6 +1,19 @@
-<p>cart works!</p>
-@for(ticket of cartService.getTickets();track ticket.id) {
-<h2>{{ ticket.name }}</h2>
-<p></p>
 
-}
+<main>
+  <h1>Cart</h1>
+  <div class="cartContainer">
+    @for(ticket of cartService.getTickets();track ticket.id) {
+    <h2>{{ ticket.name }}</h2>
+    <p>{{ ticket.price }}€</p>
+    <br />
+    <p>Quantity: {{ ticket.quantity }}</p>
+    <button (click)="removeFromCart(ticket)">Delete</button>
+    <button (click)="cartService.increaseQuantity(ticket.id)">+</button>
+    <button (click)="cartService.decreaseQuantity(ticket.id)">-</button>
+    }
+  </div>
+  <div>
+    <h2>Total: {{ cartService.getTotalPrice() }}</h2>
+    <button>Betalen</button>
+  </div>
+</main>

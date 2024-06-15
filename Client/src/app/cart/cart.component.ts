@@ -1,6 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { CartService } from '../services/cart.service';
 
+import { Ticket } from '../models/Ticket';
+
+
+
 
 @Component({
   selector: 'app-cart',
@@ -11,4 +15,8 @@ import { CartService } from '../services/cart.service';
 })
 export class CartComponent {
   cartService = inject(CartService);
+
+  removeFromCart(ticket: Ticket) {
+    this.cartService.remove(ticket);
+  }
 }

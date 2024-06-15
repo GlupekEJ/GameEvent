@@ -1,6 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { CartService } from '../services/cart.service';
 
+import { Ticket } from '../models/Ticket';
+import { CartComponent } from '../cart/cart.component';
+
 
 @Component({
   selector: 'app-tickets',
@@ -10,23 +13,23 @@ import { CartService } from '../services/cart.service';
   styleUrl: './tickets.component.css',
 })
 export class TicketsComponent {
-
-  
   cartService = inject(CartService);
-  tickets: any[] = [
-    {
-      name: 'Dag Ticket',
-      description: ` Toegang tot de beurs voor één specifieke dag.
+  tickets: Ticket[] = [
+    new Ticket(
+      1,
+      'Dag Ticket',
+      ` Toegang tot de beurs voor één specifieke dag.
          Mogelijkheid om deel te nemen aan alle algemene activiteiten en evenementen die plaatsvinden op die dag.
          Toegang tot bepaalde exclusieve presentaties, demo's of panels die alleen beschikbaar zijn op die dag.`,
-      price: 30,
-      id: 1,
-      className: 'dag1',
-      className2: 'dag',
-    },
-    {
-      name: 'Weekend Ticket',
-      description: ` - Toegang tot de beurs gedurende het hele weekend, inclusief alle dagen
+      30,
+      'dag1',
+      'dag',
+      1
+    ),
+    new Ticket(
+      2,
+      'Weekend Ticket',
+      ` - Toegang tot de beurs gedurende het hele weekend, inclusief alle dagen
         waarop het evenement plaatsvindt.
       
       
@@ -36,14 +39,30 @@ export class TicketsComponent {
       
         - Speciale weekend-specifieke activiteiten of optredens die exclusief
         zijn voor weekendticket-houders.`,
-
-      price: 50,
-      id: 2,
-      className: 'week1',
-      className2: 'week',
-    },
+      50,
+      'week1',
+      'week',
+      1
+    ),
+    new Ticket(
+      3,
+      'VIP-Ticket',
+      ` Alle voordelen van het weekendticket, plus:
+      
+      
+         - Voorrangstoegang tot de beursvloer en andere populaire attracties,
+      waardoor lange wachtrijen worden vermeden.
+      
+      
+        - Toegang tot exclusieve VIP-ruimtes met gratis hapjes, drankjes en
+      comfortabele zitplaatsen.`,
+      70,
+      'vip1',
+      'vip',
+      1
+    ),
   ];
-  voegToe(ticket: any) {
+  voegToe(ticket: Ticket) {
     this.cartService.voegTicketToe(ticket);
     console.log('added');
   }
