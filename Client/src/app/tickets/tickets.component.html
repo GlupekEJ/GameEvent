@@ -22,7 +22,7 @@
           <button id="add">+</button>
         </div>
       </div>
-      <h2>€ 30</h2>
+      <h2></h2>
       <button>VOEG TOE</button>
     </div>
   </div>
@@ -52,7 +52,7 @@
           <button id="add">+</button>
         </div>
       </div>
-      <h2>€ 50</h2>
+      <h2></h2>
       <button>VOEG TOE</button>
     </div>
   </div>
@@ -80,7 +80,7 @@
         <button id="add">+</button>
       </div>
     </div>
-    <h2>€ 85</h2>
+    <h2></h2>
     <button>VOEG TOE</button>
   </div>
 
@@ -99,7 +99,7 @@
           <button id="add">+</button>
         </div>
       </div>
-      <h2>€ {{ ticket.price }}</h2>
+      <h2> {{ ticket.price|currency : 'EUR' }}</h2>
       <button (click)="voegToe(ticket)">VOEG TOE</button>
     </div>
   </div>
