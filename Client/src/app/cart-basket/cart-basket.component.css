@@ -1,0 +1,24 @@
+.cartBasket {
+  background-color: #061e3a;
+  color: #f7fff7;
+}
+ul {
+  color: #f7fff7;
+  background-color: #061e3a;
+  position: absolute;
+  top: 10px;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+  list-style-type: none;
+  font-size: large;
+  font-family: "Inter", sans-serif;
+  padding: 5px;
+}
+li:nth-child(odd) {
+  border: solid #133b75 1px;
+  padding: 8px;
+}

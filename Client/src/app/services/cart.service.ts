@@ -57,4 +57,7 @@ export class CartService {
       return acc + ticket.price * ticket.quantity;
     }, 0);
   }
+  getTotalInCart(): number {
+    return this.cartTickets.reduce((acc, ticket) => acc + ticket.quantity, 0);
+  }
 }
