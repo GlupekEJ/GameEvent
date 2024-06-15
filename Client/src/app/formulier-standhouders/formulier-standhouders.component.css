@@ -1,5 +1,3 @@
-
-
 /*
 
 * {
@@ -136,13 +134,15 @@ mat-form-field {
 */
 * {
   padding: 0px;
-  margin: 0px;
+  box-sizing: border-box;
 }
 
 
 main {
   margin: auto;
   max-width: 80rem;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
 }
 
 section.bevraging,
@@ -175,22 +175,25 @@ p {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: clamp(1.3em, 2vw, 2em);
+  
 }
 
-h2 {
-  font-size: 1.3rem;
+h2, .totaalprijs {
+  font-size: clamp(1em, 2vw, 1.3em);
 }
 
 .reservatiepagina {
-  margin-top: 5rem;
-  margin-bottom: 4rem;
   display: flex;
   justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .titel_overzicht {
   text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .overzicht {
@@ -198,56 +201,91 @@ h2 {
   background-color: #061e3a;
   padding-top: 1rem;
   padding-bottom: 1rem;
-    padding-left: 2.5rem;
+  padding-left: 2.5rem;
   padding-right: 2.5rem;
   color: #f8f8f8;
   border-radius: 20px;
-  min-width: 20%;
+  width: 400px;
   text-align: center;
+  box-shadow: 0px 15px 10px -15px #111;
+  white-space: normal;
+  height: 1400px;
+}
+
+.titel_kies_je_categorie, .titel_plaatsen, .titel_bestelling_plaatsen_mogelijk, .titel_link_naar_webshop, .titel_achternaam, .titel_voornaam, .titel_naam_bedrijf {
+  margin-bottom: 2rem;
+}
+
+.categorie_h2, .webshop_h2, .bestelling_h2, .standplaatsen_h2, .bedrijfsnaam_h2, .voornaam_h2, .achternaam_h2{
+  margin-bottom: 1.2rem;
+}
+
+.download_plattegrond {
+  margin-top: 1rem;
+    text-decoration: none;
+  background-color: #7df9b8;
+  padding-top: .5rem;
+   padding-bottom: .5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: #202323 1px solid;
+  font-size: clamp(0.8em, 2vw, 1.1em);
+  display: inline-block;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #0e0e0e;
+   text-align: center;
+}
+
+
+.download_plattegrond:hover {
+    background-color: #32b772;
+}
+
+ input {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid #061e3a;
+    width: 100%; 
+    
+}
+
+.plattegrond, .kies_je_categorie, .plaatsen, .bestelling_plaatsen_mogelijk, .voornaam_input, .achternaam_input, .naam_bedrijf_input {
+  margin-bottom: 7rem;
 }
 
 
 
-.plattegrond {
-  margin-bottom: 10rem;
-}
-
-.kies_je_categorie {
-  margin-bottom: 10rem;
-}
-
-.plaatsen {
-  margin-bottom: 10rem;
-}
-
-.bestelling_plaatsen_mogelijk {
-  margin-bottom: 4rem;
-}
-
-.gekozen_categorie {
+.gekozen_categorie, .webshop, .bestelling, .standplaatsen, .achternaam, .voornaam, .bedrijfsnaam {
   border-bottom: 1px solid #f8f8f8;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   padding-top: 1.2rem;
   text-align: left;
 }
 
-.webshop {
-  border-bottom: 1px solid #f8f8f8;
-  padding-bottom: 3rem;
-  padding-top: 1.2rem;
-  text-align: left;
-}
-
-.standplaatsen {
-  border-bottom: 1px solid #f8f8f8;
-  padding-bottom: 3rem;
-  padding-top: 1.2rem;
-  text-align: left;
-}
 
 
 .totaalprijs {
     padding-top: 4rem;
     padding-bottom: 4rem;
     text-align: left;
+}
+
+@media screen and (max-width: 53rem) {
+    .reservatiepagina {
+      flex-direction: column;
+    }
+
+    .overzicht {
+      margin-top: 5rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: calc(100% - 2rem); 
+    }
 }
