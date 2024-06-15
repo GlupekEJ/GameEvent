@@ -16,6 +16,9 @@
     "concurrently": "^8.2.2"
   },
   "dependencies": {
-    "jspdf": "^2.5.1"
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jspdf": "^2.5.1",
+    "path": "^0.12.7"
   }
 }
