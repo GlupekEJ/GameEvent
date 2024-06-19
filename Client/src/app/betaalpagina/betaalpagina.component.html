@@ -3,27 +3,26 @@
 
   <section class="betalen">
     <article>
-      <label id="example-radio-group-label1"></label>
-      <mat-radio-group
-        aria-labelledby="example-radio-group-label1"
-        class="example-radio-group1"
-        [(ngModel)]="paymentOptions"
-      >
-        @for (paymentOption of paymentOption; track paymentOption) {
-        <mat-radio-button
-          class="example-radio-button"
-          [value]="paymentOption"
-          >{{ paymentOption }}</mat-radio-button
+      <mat-radio-group [formControl]="methodeControl" required>
+        @for (methode of methodes; track methodes) {
+        <mat-radio-button class="example-radio-button" [value]="methode">
+          {{ methode.betalingsMethode }}</mat-radio-button
         >
         }
       </mat-radio-group>
+    </article>
+
+    <article class="prompt_betaling">
+      @if (methodeControl.hasError('required')) {
+      <mat-error>Gelieve een betalingsmethode te selecteren</mat-error>
+      }
     </article>
 
     <article class="logo_betaalmethodes">
       <img src="assets/images/Bancontact.png" alt="Logo Bancontact" />
       <img src="assets/images/Mastercard.png" alt="Logo Mastercard" />
       <img src="assets/images/Visa.png" alt="Logo Visa" />
-      <img src="assets/images/Paypal.png" alt="Logo PaPpal" />
+      <img src="assets/images/Paypal.png" alt="Logo PayPal" />
     </article>
 
     <a class="afrekenen" routerLink="/betaling-geslaagd">AFREKENEN</a>
