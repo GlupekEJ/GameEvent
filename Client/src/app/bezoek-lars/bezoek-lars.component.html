@@ -1,16 +1,11 @@
+<p class="intro">
+  Ook deze rakker zal aanwezig zijn! Lars Goedhuys, bekend van ... 🦗, zal
+  handtekeningen uitdelen, op de foto gaan en zijn geheim delen voor een
+  succesvolle carrière!
+</p>
 
-  <p class="intro">
-    Ook deze rakker zal aanwezig zijn! Lars Goedhuys, bekend van ... 🦗, zal
-    handtekeningen uitdelen, op de foto gaan en zijn geheim delen voor een
-    succesvolle carrière!
-  </p>
-
-
-
+<section class="planning">
   <section class="planning">
-
-  <section class="planning">
-
     <article>
       <h2 class="titel_planning">Planning:</h2>
       <ul class="juli1">
@@ -32,22 +27,29 @@
     <article>
       <img src="assets/images/LARS.jpg" alt="" />
     </article>
-
-  
   </section>
 
-
   <div>
-    <h1>Geef jouw commentar aan </h1>
-    <ul style="list-style-type: none; padding: 0;">
-      <li *ngFor="let item of comments" style="border: 1px solid #ccc; padding: 8px; margin-bottom: 4px;">
-        <strong>{{ item.author }}</strong>: {{ item.comment }}
+    <h1>Geef commentaar</h1>
+    <ul style="list-style-type: none; padding: 0">
+      @for(item of comments;track item ){
+      <li>
+        <strong>{{ item.author }}</strong> {{ item }}
       </li>
+      }
     </ul>
     <div>
-      <input [(ngModel)]="newAuthor" placeholder="Author" style="margin-right: 8px;">
-      <input [(ngModel)]="newComment" placeholder="Comment" style="margin-right: 8px;">
+      <input
+        [(ngModel)]="newAuthor"
+        placeholder="Auteur"
+        style="margin-right: 8px"
+      />
+      <input
+        [(ngModel)]="newComment"
+        placeholder="Commentaar"
+        style="margin-right: 8px"
+      />
       <button (click)="addComment()">Add Comment</button>
     </div>
   </div>
-
+</section>

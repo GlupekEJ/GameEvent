@@ -1,7 +1,7 @@
-import { API } from './api';
+import { api } from './api';
 
 describe('API', () => {
   it('should create an instance', () => {
-    expect(new API()).toBeTruthy();
+    expect(new api('Erik', 'Lars is king')).toBeTruthy();
   });
 });

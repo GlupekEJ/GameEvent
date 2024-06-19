@@ -55,7 +55,7 @@
         <p>A = Artiesten</p>
         <p>C = Cosplay</p>
         <p>H = Handelaar</p>
-         <mat-form-field>
+        <mat-form-field>
           <mat-label>Plaatsen</mat-label>
           <mat-select [formControl]="standControl" required>
             <mat-option>--</mat-option>
@@ -67,9 +67,6 @@
           <mat-error>Please choose a category</mat-error>
           }
         </mat-form-field>
-       
-
-
       </article>
 
       <article class="naam_bedrijf_input">
@@ -135,12 +132,9 @@
       </article>
 
       <article class="standplaatsen">
-
         <h2 class="h2_standplaatsen">Standplaats(en)</h2>
-        <mat-hint>{{standControl.value?.place}}</mat-hint>
+        <mat-hint>{{ standControl.value?.place }}</mat-hint>
       </article>
-
-
 
       <article class="bedrijfsnaam">
         <h2 class="bedrijfsnaam_h2">Bedrijfsnaam</h2>
@@ -158,13 +152,12 @@
         <mat-hint>{{ inputLinkWebshop }}</mat-hint>
       </article>
 
-
-
       <div class="titel_totaalprijs_met_prijs">
         <p class="totaalprijs">TOTAAL</p>
-        <mat-hint class="prijs">€{{ standControl.value?.price }}</mat-hint>
+        <mat-hint class="prijs">{{
+          standControl.value?.price | currency : "EUR"
+        }}</mat-hint>
       </div>
-
 
       <a class="afrekenen" routerLink="/betaalpagina"
         >VERDER NAAR BETAALWIJZE</a

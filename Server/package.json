@@ -5,15 +5,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm ci & cross-env PORT=3007 nodemon server.js"
+    "start": "npm ci & cross-env PORT=3010 nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2",
-    "cors":"^2.8.5"
-    
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

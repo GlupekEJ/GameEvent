@@ -10,22 +10,15 @@
       <h1>{{ ticket.name }}</h1>
       <div class="counter">
         <div class="buttons">
-          <button
-            id="subtract"
-            (click)="cartService.decreaseQuantity(ticket.id)"
-          >
-            -
-          </button>
-          <span id="quantity">{{ ticket.quantity }}</span>
-          <button id="add" (click)="cartService.increaseQuantity(ticket.id)">
-            +
-          </button>
+          <button id="subtract" (click)="decreaseNumberCount()">-</button>
+          <span id="quantity">{{ numberToAdd }}</span>
+          <button id="add" (click)="increaseNumberCount()">+</button>
         </div>
       </div>
 
-    <h2>{{ ticket.price|currency : "EUR" }}</h2>
+      <h2>{{ ticket.price | currency : "EUR" }}</h2>
 
-      <button (click)="voegToe(ticket)">VOEG TOE</button>
+      <button (click)="voegToe(ticket, numberToAdd)">VOEG TOE</button>
     </div>
   </div>
 

@@ -57,12 +57,25 @@ export class TicketsComponent {
       'vip'
     ),
   ];
-
+  numberToAdd: number = 1;
+  increaseNumberCount() {
+    this.numberToAdd++;
+    console.log(this.numberToAdd);
+    return this.numberToAdd;
+  }
+  decreaseNumberCount() {
+    if (this.numberToAdd > 0) {
+      this.numberToAdd--;
+    }
+    console.log(this.numberToAdd);
+    return this.numberToAdd;
+  }
   constructor(public cartService: CartService) {
     this.cartService = cartService;
   }
-  voegToe(ticket: Ticket) {
-    this.cartService.voegTicketToe(ticket);
+  voegToe(ticket: Ticket, numberToAdd: number) {
+    this.cartService.voegTicketToe(ticket, numberToAdd);
     console.log('added');
+    this.numberToAdd = 1;
   }
 }

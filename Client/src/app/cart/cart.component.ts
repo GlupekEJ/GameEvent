@@ -1,13 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { CartService } from '../services/cart.service';
 import { RouterLink } from '@angular/router';
-
+import { CurrencyPipe } from '@angular/common';
 import { Ticket } from '../models/Ticket';
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, CurrencyPipe],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css',
 })
