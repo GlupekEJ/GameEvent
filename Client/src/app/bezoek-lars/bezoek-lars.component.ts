@@ -16,8 +16,8 @@ export class BezoekLarsComponent implements OnInit {
   newAuthor: string = '';
   newComment: string = '';
   public newTodos: any = {};
-  userId: number = 0;
-  id: number = 0;
+  userId: number = 1;
+  id: number = 1;
   title: string = '';
   completed: boolean = false;
 
