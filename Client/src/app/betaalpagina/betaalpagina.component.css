@@ -51,6 +51,11 @@ p {
   background-color: #32b772;
 }
 
+.prompt_betaling {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 section {
    
        display: flex;
