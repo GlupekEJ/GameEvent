@@ -15,22 +15,25 @@ export class CartService {
     localStorage.setItem('cartTickets', JSON.stringify(this.cartTickets));
   }
 
-  voegTicketToe(ticket: Ticket) {
+  voegTicketToe(ticket: Ticket, numberToAdd: number) {
     let ticketIndex = this.cartTickets.findIndex((t) => t.id === ticket.id);
+
     if (ticketIndex >= 0) {
       // If the ticket already exists, increase its quantity
-      this.cartTickets[ticketIndex].quantity++;
+      this.cartTickets[ticketIndex].quantity += numberToAdd;
     } else {
       // Otherwise, add the new ticket
-      this.cartTickets.push({ ...ticket, quantity: 1 }); // Assuming your Ticket class has a quantity property initialized to 1
+      this.cartTickets.push({ ...ticket, quantity: numberToAdd });
     }
+    //update locale storage
     this.updateCartInLS();
+    numberToAdd = 1;
   }
   getTickets() {
     return this.cartTickets;
     this.updateCartInLS();
   }
-
+  //increase where ticketindex.id == the ticket.id
   increaseQuantity(id: number) {
     let ticket = this.cartTickets.find((t) => t.id === id);
     if (ticket) {
@@ -38,20 +41,22 @@ export class CartService {
     }
     this.updateCartInLS();
   }
-
+  //decrease where ticketindex.id == the ticket.id
   decreaseQuantity(id: number) {
     let ticket = this.cartTickets.find((t) => t.id === id);
     if (ticket) {
-      ticket.quantity--;
+      if (ticket.quantity > 0) {
+        ticket.quantity--;
+      }
     }
     this.updateCartInLS();
   }
-
+  //remove, the filter removes the ticket where the index.id == ticket.id, it only keeps the items in cartTickets where id doesn't match
   remove(ticket: Ticket) {
     this.cartTickets = this.cartTickets.filter((t) => t.id !== ticket.id);
     this.updateCartInLS();
   }
-
+  //reduce adds the value of ticketprice to the accumulator
   getTotalPrice() {
     return this.cartTickets.reduce((acc, ticket) => {
       return acc + ticket.price * ticket.quantity;

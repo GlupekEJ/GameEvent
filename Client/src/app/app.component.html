@@ -12,5 +12,8 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet />
-
-<app-footer></app-footer>
+<p>{{ messageFromChild }}</p>
+<app-footer
+  [message]="messageFromParent"
+  (messageEvent)="messageGotFromChild($event)"
+></app-footer>

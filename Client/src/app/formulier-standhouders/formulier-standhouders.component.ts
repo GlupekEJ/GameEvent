@@ -4,6 +4,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { jsPDF } from 'jspdf';
+import { CurrencyPipe } from '@angular/common';
 
 
 
@@ -43,6 +44,7 @@ interface Orders {
     MatSelectModule,
     FormsModule,
     RouterLink,
+    CurrencyPipe,
   ],
   templateUrl: './formulier-standhouders.component.html',
   styleUrl: './formulier-standhouders.component.css',
@@ -91,6 +93,7 @@ export class FormulierStandhoudersComponent {
 
   inputNaamBedrijf = '';
 
+
   categoryControl = new FormControl<Category | null>(null, [
     Validators.required,
   ]);
@@ -108,6 +111,7 @@ export class FormulierStandhoudersComponent {
   ];
 
   standControl = new FormControl<Stand | null>(null, [Validators.required]);
+
   stands: Stand[] = [
     //Places for Artiesten
     { place: 'A1, A2', price: 175 },

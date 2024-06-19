@@ -15,7 +15,7 @@ export class Ticket {
     price: number,
     classname: string,
     classname2: string,
-    quantity: number = 1
+    quantity: number = 1 //default value 1
   ) {
     this.id = id;
     this.name = name;

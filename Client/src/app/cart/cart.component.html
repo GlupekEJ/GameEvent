@@ -5,7 +5,7 @@
       @for(ticket of cartService.getTickets();track ticket.id) {
       <li>
         <h2>{{ ticket.name }}</h2>
-        <p>€{{ ticket.price }}</p>
+        <p>{{ ticket.price | currency : "EUR" }}</p>
         <br />
         <p>Quantity: {{ ticket.quantity }}</p>
         <button (click)="removeFromCart(ticket)">Delete</button>
@@ -16,9 +16,8 @@
     </ul>
   </div>
   <div>
-    <h2>Total: €{{ cartService.getTotalPrice() }}</h2>
 
-
+    <h2>Total: {{ cartService.getTotalPrice() | currency : "EUR" }}</h2>
 
     <a routerLink="/ticketbetaalpagina"> <button>Betalen</button></a>
   </div>

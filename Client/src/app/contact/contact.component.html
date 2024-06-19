@@ -3,8 +3,12 @@
     <p>Problemen met uw bestelling?</p>
     <p>Laat het ons weten! 👇</p>
   </section>
-  <form class="contactformulier" [formGroup]="form">
-
+  <form
+    class="contactformulier"
+    [formGroup]="form"
+    action="javascript:void(0)"
+    (submit)="send()"
+  >
     <mat-form-field appearance="fill">
       <mat-label>E-mail</mat-label>
       <input
@@ -14,7 +18,7 @@
         formControlName="email"
       />
     </mat-form-field>
-
+    <p>{{ form.value.email }}</p>
     <mat-form-field appearance="fill">
       <mat-label>Wat is je voornaam</mat-label>
       <input
@@ -24,7 +28,7 @@
         formControlName="voornaam"
       />
     </mat-form-field>
-
+    <p>{{ form.value.voornaam }}</p>
     <mat-form-field appearance="fill">
       <mat-label>Wat is je achternaam</mat-label>
       <input
@@ -34,7 +38,7 @@
         formControlName="achternaam"
       />
     </mat-form-field>
-
+    <p>{{ form.value.achternaam }}</p>
     <mat-form-field class="example-full-width">
       <mat-label>Beschrijving van uw probleem</mat-label>
       <textarea
@@ -43,10 +47,9 @@
         formControlName="beschrijving"
       ></textarea>
     </mat-form-field>
-
+    <p>{{ form.value.beschrijving }}</p>
     <div class="verstuur_bericht">
-      <button class="knop_verstuur_bericht">VERSTUUR</button>
+      <button type="submit" class="knop_verstuur_bericht">VERSTUUR</button>
     </div>
   </form>
 </main>
-
