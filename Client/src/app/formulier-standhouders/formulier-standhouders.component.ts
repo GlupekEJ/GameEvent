@@ -6,11 +6,14 @@ import { MatRadioModule } from '@angular/material/radio';
 import { jsPDF } from 'jspdf';
 import { CurrencyPipe } from '@angular/common';
 
+
+
 import {
   ReactiveFormsModule,
   FormsModule,
   FormControl,
   Validators,
+  FormBuilder,
 } from '@angular/forms';
 
 import { MatSelectModule } from '@angular/material/select';
@@ -19,6 +22,14 @@ import { RouterLink } from '@angular/router';
 interface Stand {
   price: number;
   place: string;
+}
+
+interface Category {
+  categoryOption: string;
+}
+
+interface Orders {
+  orderOption: string;
 }
 
 @Component({
@@ -39,6 +50,17 @@ interface Stand {
   styleUrl: './formulier-standhouders.component.css',
 })
 export class FormulierStandhoudersComponent {
+  formBuilder = inject(FormBuilder);
+  formulierStandhouders = this.formBuilder.group({
+    voornaam: ['', Validators.required],
+    achternaam: ['', Validators.required],
+    categorie: ['', Validators.required],
+    plaats: ['', Validators.required],
+    bedrijfsnaam: [''],
+    bestelling: [''],
+    webshop: [''],
+  });
+
   generatePlattegrond() {
     const margins = {
       top: 15,
@@ -59,22 +81,37 @@ export class FormulierStandhoudersComponent {
     doc.save('PixelPalooza_Plattegrond');
   }
 
-  inputLinkWebshop = '';
-
+  voornaamFormControl = new FormControl('', [Validators.required]);
   inputVoornaam = '';
 
+
+  inputLinkWebshop = '';
+
+  achternaamFormControl = new FormControl('', [Validators.required]);
   inputAchternaam = '';
+
 
   inputNaamBedrijf = '';
 
-  categoryControl!: string;
-  categories: string[] = ['Artiest', 'Cosplay', 'Handelaar'];
 
-  orderOptions!: string;
-  options: string[] = ['Ja', 'Neen', 'Ik ben geen handelaar'];
+  categoryControl = new FormControl<Category | null>(null, [
+    Validators.required,
+  ]);
+  categories: Category[] = [
+    { categoryOption: 'Artiest' },
+    { categoryOption: 'Cosplay' },
+    { categoryOption: 'Handelaar' },
+  ];
 
-  standControl = new FormControl<Stand | null>(null, Validators.required);
-  selectFormControl1 = new FormControl('', Validators.required);
+  orderControl = new FormControl<Orders | null>(null, [Validators.required]);
+  order: Orders[] = [
+    { orderOption: 'Ja' },
+    { orderOption: 'Nee' },
+    { orderOption: 'Ik ben geen handelaar' },
+  ];
+
+  standControl = new FormControl<Stand | null>(null, [Validators.required]);
+
   stands: Stand[] = [
     //Places for Artiesten
     { place: 'A1, A2', price: 175 },

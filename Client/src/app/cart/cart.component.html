@@ -16,7 +16,9 @@
     </ul>
   </div>
   <div>
+
     <h2>Total: {{ cartService.getTotalPrice() | currency : "EUR" }}</h2>
+
     <a routerLink="/ticketbetaalpagina"> <button>Betalen</button></a>
   </div>
 </main>
