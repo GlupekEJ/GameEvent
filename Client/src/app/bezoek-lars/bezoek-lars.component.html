@@ -31,25 +31,31 @@
 
   <div>
     <h1>Geef commentaar</h1>
-    <ul style="list-style-type: none; padding: 0">
+    <ul class="apiUl">
       @for(item of comments;track item ){
       <li>
-        <strong>{{ item.author }}</strong> {{ item }}
+        {{ item }}
       </li>
       }
     </ul>
     <div>
+      <input class="apiInput" [(ngModel)]="newAuthor" placeholder="Auteur" />
       <input
-        [(ngModel)]="newAuthor"
-        placeholder="Auteur"
-        style="margin-right: 8px"
-      />
-      <input
+        class="apiInput"
         [(ngModel)]="newComment"
         placeholder="Commentaar"
-        style="margin-right: 8px"
       />
       <button (click)="addComment()">Add Comment</button>
+    </div>
+    <!--Made display none in the css because I didn't like the look -->
+    <div class="hiddenApi">{{ data.title }}</div>
+
+    <div>
+      <input class="apiInput" [(ngModel)]="userId" placeholder="" />
+      <input class="apiInput" [(ngModel)]="id" placeholder="" />
+      <input class="apiInput" [(ngModel)]="title" placeholder="title" />
+      <input class="apiInput" [(ngModel)]="completed" placeholder="" />
+      <button (click)="addTodo()">Add Comment</button>
     </div>
   </div>
 </section>

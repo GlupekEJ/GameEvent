@@ -13,6 +13,6 @@ export class FooterComponent {
   @Output() messageEvent = new EventEmitter<string>();
 
   sendToParent() {
-    this.messageEvent.emit('youtube link niet actief(volgens child)');
+    this.messageEvent.emit('facebook link niet actief(volgens child)');
   }
 }
