@@ -31,7 +31,6 @@ export class CartService {
   }
   getTickets() {
     return this.cartTickets;
-    this.updateCartInLS();
   }
   //increase where ticketindex.id == the ticket.id
   increaseQuantity(id: number) {

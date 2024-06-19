@@ -1,73 +1,80 @@
 /*     ALGEMENE ASTERISK     */
 
 * {
-    padding: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
 
 main {
-    margin: auto;
-    max-width: 80rem;
+  margin: auto;
+  max-width: 80rem;
 }
 
-
 .intro {
-       font-family: 'Kanit', sans-serif;
-       font-size: clamp(1.2em, 2.5vw, 2.5em); 
-       font-weight: 600;
-       text-align: center;
-       margin-left: 1rem;
-       margin-right: 1rem;
-       margin-top: 5rem;
+  font-family: "Kanit", sans-serif;
+  font-size: clamp(1.2em, 2.5vw, 2.5em);
+  font-weight: 600;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 5rem;
 }
 
 .titel_planning {
-     font-family: 'Kalam', sans-serif;
-     font-size: clamp(1.5em, 2.5vw, 2.5em);
+  font-family: "Kalam", sans-serif;
+  font-size: clamp(1.5em, 2.5vw, 2.5em);
 }
 
-.juli1, .juli2, .datum {
-      font-family: "Inter", sans-serif;
+.juli1,
+.juli2,
+.datum {
+  font-family: "Inter", sans-serif;
 }
 .juli2 {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .datum {
-    font-size: clamp(1.2em, 2.5vw, 1.8em); 
+  font-size: clamp(1.2em, 2.5vw, 1.8em);
 }
 
 li {
-    font-size: clamp(1em, 2.5vw, 1.2em); 
-    margin-left: 1rem;
-    margin-right: 1rem;
-    
+  font-size: clamp(1em, 2.5vw, 1.2em);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.apiUl {
+  list-style-type: none;
+}
+.planning {
+  margin-bottom: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8rem;
+  align-items: center;
+}
+.hiddenApi {
+  display: none;
 }
 
-.planning {
-   
-    margin-bottom: 7rem;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 8rem;
-    align-items: center;
-    
+.apiInput {
+  margin-right: 8px;
 }
 
 img {
-    margin-top: 3rem;
-     max-width: 100%;
-    height: auto;
+  margin-top: 3rem;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 60rem) {
-    .planning {
-        flex-direction: column;
-        margin-top: 2em;
-    }
+  .planning {
+    flex-direction: column;
+    margin-top: 2em;
+  }
 
-    .titel_planning, .datum {
-        text-align: center;
-    }
+  .titel_planning,
+  .datum {
+    text-align: center;
+  }
 }

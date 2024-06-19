@@ -12,11 +12,14 @@ app.use("/", express.static(join(__dirname, "public", "browser")));
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://127.0.0.1:4200", //fixed the cors error by using * but a better fix is using the address and port
+    origin: "*", //fixed the cors error by using *
   })
 );
 
-const comments = [new API("Erik", "Lars is king")];
+const comments = [
+  new API("Erik", "Lars is king"),
+  new API("Lars", "Erik is the best"),
+];
 
 app.get("/comments", cors(), (req, res) => {
   res.json(comments.map((comments) => comments.getInfo()));
